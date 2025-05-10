@@ -1,0 +1,196 @@
+:root {
+    /* https://coolors.co/e3f2fd-1a237e-ef476f-ffd166-b4e33d */
+    --heading: "Rubik", sans-serif;
+    --content: "Ubuntu", sans-serif;
+    --blacktone: #333A3F;
+    --whitetone: #F7F7F7;
+    --graytone: #B7B7B7;
+    --primary: #E3F2FD;
+    --secondary: #1A237E;
+    --triada: #B4E33D;
+    --triadb: #EF476F;
+    --highlited: #FFD166;
+    --radius-1: 0.5rem;
+    --shadowbox: 0 0 10px rgba(0, 0, 0, 0.1);
+    --size-1: 0.8rem;
+    --size-2: 1rem;
+    --size-3: 1.2rem;
+    --size-4: 1.5rem;
+    --size-5: 2rem;
+    --size-6: 2.0625rem;
+    --cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading);
+}
+
+a {
+    font-family: var(--content);
+    text-decoration: none;
+}
+
+p,
+span,
+input[type="text"],
+textarea,
+select,
+button,
+figcaption {
+    font-family: var(--content);
+}
+
+a:visited {
+    color: var(--blacktone);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: var(--cursor);
+}
+
+/* header */
+header {
+    background-color: var(--primary)
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-container span {
+    padding: var(--size-2);
+}
+
+.header-container .author {
+    font-family: var(--heading);
+    font-size: var(--size-4);
+    padding: var(--size-2) var(--size-3);
+}
+
+.header-container .profile {
+    width: 48px;
+    height: auto;
+    border-radius: var(--radius-1);
+    box-shadow: var(--shadowbox);
+    margin: var(--size-2) 0;
+}
+
+nav {
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1);
+    margin: 0;
+    margin-left: -40px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whitetone);
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a, button {
+    padding: var(--size-2) var(--size-3);
+    color: var(--blacktone);
+    background-color: var(--whitetone);
+    border-radius: var(--radius-1);
+    box-shadow: var(--shadowbox);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    z-index: 0;
+}
+
+nav ul li a:hover,
+.hamburger-menu:hover, button:hover {
+    background-color: var(--blacktone);
+    color: var(--whitetone);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: var(--cursor);
+}
+
+.hamburger-menu {
+    padding: var(--size-2) var(--size-3);
+    border-radius: var(--radius-1);
+}
+
+nav ul li a.active {
+    background-color: var(--blacktone);
+    color: var(--whitetone);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* main section home */
+
+figcaption {
+    font-size: var(--size-1);
+    color: var(--blacktone);
+    text-align: center;
+    margin-top: var(--size-2);
+}
+
+main {
+    display: grid;
+    gap: var(--size-3);
+}
+
+.header-card {
+    background-color: var(--primary);
+    padding: var(--size-1);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadowbox);
+}
+
+.header-card h2 {
+    margin: var(--size-1);
+}
+
+.body-card {
+    background-color: var(--whitetone);
+    padding: var(--size-1);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: var(--shadowbox);
+}
+
+section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section img {
+    width: 145px;
+    height: auto;
+    border-radius: var(--radius-1);
+    box-shadow: var(--shadowbox);
+}
