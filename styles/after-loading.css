@@ -8,7 +8,7 @@
     --primary: #E3F2FD;
     --secondary: #1A237E;
     --triada: #B4E33D;
-    --triadb: #EF476F;
+    --triadb: #ffb432;
     --highlited: #FFD166;
     --radius-1: 0.5rem;
     --shadowbox: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -149,5 +149,5 @@ footer p {
     background-color: var(--triadb);
     margin-top: var(--size-2);
     font-size: var(--size-1);
-    color: var(--blacktone);
+    color: var(--blacktone) !important;
 }
