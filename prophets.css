@@ -1,0 +1,67 @@
+:root {
+    --heading: "Merienda", cursive;
+    --body: "Oranienbaum", serif;
+    --heading-weight: 600;
+    --body-weight: 400;
+    /* CSS HEX */
+    --pomp-and-power: #8d6a9fff;
+    --mint-cream: #f4fff8ff;
+    --coral-pink: #fe938cff;
+    --cambridge-blue: #709775ff;
+    --russian-violet: #320e3bff;
+    --black-tone: #000000;
+    --white-tone: #ffffff;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: var(--body);
+    font-weight: var(--body-weight);
+    margin: 7px;
+}
+
+section {
+    background-color: var(--mint-cream);
+    color: var(--russian-violet);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: var(--heading);
+    font-weight: var(--heading-weight);
+    color: var(--pomp-and-power);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading);
+    font-weight: var(--heading-weight);
+    color: var(--russian-violet);
+}
+
+/* footer */
+footer {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--cambridge-blue);
+    color: var(--black-tone);
+    font-family: var(--body);
+}
+footer p {
+    font-size: 2rem;
+    text-align: center;
+    text-align: center;
+}
