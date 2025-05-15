@@ -6,26 +6,26 @@ async function getProphetData() {
     if (response.ok) {
         const data = await response.json();
         /* console.table(data); */
-        displayProphets(data.prophets);
+        displayProphets(data.companys);
     }
 }
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displaycompanys = (companys) => {
+    companys.forEach((company) => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
         let birthDate = document.createElement('p');
         let birthPlace = document.createElement('p');
         let portrait = document.createElement('img');
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
+        fullName.textContent = `${company.company_name}`;
+        birthDate.textContent = `Phone: ${company.phone}`;
+        birthPlace.textContent = `Email: ${company.email}`;
+        /* portrait.setAttribute('src', company.imageurl); */
+        portrait.setAttribute('alt', `Portrait of ${company.company_name}`);
+        /* portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        portrait.setAttribute('height', '440'); */
 
         card.appendChild(fullName);
         card.appendChild(birthDate);
