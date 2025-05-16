@@ -2,353 +2,52 @@
     "companys": [
     {
       "id": 1,
-      "company_name": "Vipe",
-      "email": "fnovik0@independent.co.uk",
-      "phone": "301-996-8558",
-      "slogan": "incubate intuitive infomediaries"
+      "company_name": "COMPORACION FIBEX TELECOM, C.A.",
+      "email": "info@indepenfibextelecom.net",
+      "phone": "+58 212-3108300",
+      "imageurl": "https://www.fibextelecom.net/assets/images/LOGOFIBEXHORIZONTALPOSITIVO.png"
     },
     {
       "id": 2,
-      "company_name": "Zoonoodle",
-      "email": "hgrandin1@geocities.com",
-      "phone": "548-714-8860",
-      "slogan": "engage user-centric e-markets"
+      "company_name": "GRUPO CASHEA VE, C.A.",
+      "email": "no-reply@transactional.cashea.app",
+      "phone": "+58 212-8190114",
+      "imageurl": "https://cdn.prod.website-files.com/632db6924fcc7661685adfa8/664776c9b680e021178d3a07_Logo_Cashea.png"
     },
     {
       "id": 3,
-      "company_name": "InnoZ",
-      "email": "wjolliss2@chron.com",
-      "phone": "711-942-8187",
-      "slogan": "transition strategic web services"
+      "company_name": "CORPORACIÓN DIGITEL, C.A",
+      "email": "digitel@digitel.com.ve",
+      "phone": "+58 412-9121121",
+      "imageurl": "https://cdn.prod.website-files.com/66195df65acda9133eff051b/6740700a15c0ac9b15898e6b_logo_digitel_svg_color.svg"
     },
     {
       "id": 4,
-      "company_name": "Brightbean",
-      "email": "mcowitz3@g.co",
-      "phone": "768-834-4194",
-      "slogan": "synergize back-end applications"
+      "company_name": "NIU PROTECTOR, C.A.",
+      "email": "soporte@niuprotector.net",
+      "phone": "+58 412-9342078",
+      "imageurl": "https://niuprotector.net/Niu_Protector_negro.4c39794ce4a56a8437c6.png"
     },
     {
       "id": 5,
-      "company_name": "Tagopia",
-      "email": "bcoleby4@slashdot.org",
-      "phone": "670-785-6754",
-      "slogan": "enable impactful infrastructures"
+      "company_name": "SAINT DE VENEZUELA, C.A.",
+      "email": "sainsyca@gmail.com",
+      "phone": "+58 241-6173171",
+      "imageurl": "https://saintnet.com/wp-content/uploads/2020/05/Saint-blanco.png"
     },
     {
       "id": 6,
-      "company_name": "Realcube",
-      "email": "hsegge5@opera.com",
-      "phone": "630-279-0441",
-      "slogan": "generate turn-key bandwidth"
+      "company_name": "A2 SOFTWAY C.A",
+      "email": "a2softway@a2.com.ve",
+      "phone": "+58 261-7592770",
+      "imageurl": "http://www.a2.com.ve/imgs/interfaz/logohead.png"
     },
     {
       "id": 7,
-      "company_name": "Kanoodle",
-      "email": "nbulluck6@bloglines.com",
+      "company_name": "BIOPAGO C.A.",
+      "email": "soporte@biopagobdv.com",
       "phone": "785-467-3941",
-      "slogan": "cultivate ubiquitous deliverables"
-    },
-    {
-      "id": 8,
-      "company_name": "Latz",
-      "email": "pfetherstan7@huffingtonpost.com",
-      "phone": "377-832-1179",
-      "slogan": "repurpose distributed partnerships"
-    },
-    {
-      "id": 9,
-      "company_name": "Quatz",
-      "email": "lbirdsall8@skype.com",
-      "phone": "480-714-0744",
-      "slogan": "visualize next-generation solutions"
-    },
-    {
-      "id": 10,
-      "company_name": "Fatz",
-      "email": "dstory9@google.de",
-      "phone": "909-316-8138",
-      "slogan": "transform bleeding-edge functionalities"
-    },
-    {
-      "id": 11,
-      "company_name": "Feedfire",
-      "email": "dfridayea@ibm.com",
-      "phone": "707-692-8113",
-      "slogan": "utilize out-of-the-box markets"
-    },
-    {
-      "id": 12,
-      "company_name": "Youbridge",
-      "email": "pjoulesb@nature.com",
-      "phone": "837-722-3111",
-      "slogan": "aggregate world-class initiatives"
-    },
-    {
-      "id": 13,
-      "company_name": "Skynoodle",
-      "email": "gsharkc@dropbox.com",
-      "phone": "595-289-8977",
-      "slogan": "visualize plug-and-play bandwidth"
-    },
-    {
-      "id": 14,
-      "company_name": "Oodoo",
-      "email": "erohlfsd@angelfire.com",
-      "phone": "357-549-7422",
-      "slogan": "strategize B2B communities"
-    },
-    {
-      "id": 15,
-      "company_name": "Livetube",
-      "email": "dmcnivene@miibeian.gov.cn",
-      "phone": "243-309-7520",
-      "slogan": "envisioneer compelling networks"
-    },
-    {
-      "id": 16,
-      "company_name": "Skiptube",
-      "email": "uhambidgef@stumbleupon.com",
-      "phone": "915-611-3424",
-      "slogan": "transition plug-and-play solutions"
-    },
-    {
-      "id": 17,
-      "company_name": "Dabjam",
-      "email": "nstribblingg@disqus.com",
-      "phone": "212-802-5833",
-      "slogan": "aggregate robust action-items"
-    },
-    {
-      "id": 18,
-      "company_name": "Avamm",
-      "email": "drojah@mtv.com",
-      "phone": "215-500-8786",
-      "slogan": "leverage integrated metrics"
-    },
-    {
-      "id": 19,
-      "company_name": "Edgetag",
-      "email": "lphilliskirki@ezinearticles.com",
-      "phone": "943-378-7833",
-      "slogan": "integrate 24/365 synergies"
-    },
-    {
-      "id": 20,
-      "company_name": "Photobean",
-      "email": "bboatj@1688.com",
-      "phone": "550-746-8971",
-      "slogan": "exploit ubiquitous users"
-    },
-    {
-      "id": 21,
-      "company_name": "Zoonoodle",
-      "email": "tmajuryk@oaic.gov.au",
-      "phone": "990-470-8302",
-      "slogan": "engage best-of-breed technologies"
-    },
-    {
-      "id": 22,
-      "company_name": "Buzzster",
-      "email": "bdiklel@51.la",
-      "phone": "305-256-1042",
-      "slogan": "e-enable turn-key e-tailers"
-    },
-    {
-      "id": 23,
-      "company_name": "Ooba",
-      "email": "wmackonochiem@ucoz.com",
-      "phone": "840-831-3827",
-      "slogan": "enable bricks-and-clicks convergence"
-    },
-    {
-      "id": 24,
-      "company_name": "Riffpath",
-      "email": "jnewberryn@abc.net.au",
-      "phone": "517-958-2027",
-      "slogan": "monetize best-of-breed content"
-    },
-    {
-      "id": 25,
-      "company_name": "Innojam",
-      "email": "jmeiero@qq.com",
-      "phone": "822-525-2518",
-      "slogan": "maximize extensible systems"
-    },
-    {
-      "id": 26,
-      "company_name": "Jabberbean",
-      "email": "fmoubrayp@a8.net",
-      "phone": "122-769-1584",
-      "slogan": "orchestrate back-end communities"
-    },
-    {
-      "id": 27,
-      "company_name": "Flashpoint",
-      "email": "bgoodburq@sohu.com",
-      "phone": "729-628-3407",
-      "slogan": "morph wireless platforms"
-    },
-    {
-      "id": 28,
-      "company_name": "Youfeed",
-      "email": "benticottr@netlog.com",
-      "phone": "507-671-1562",
-      "slogan": "recontextualize clicks-and-mortar relationships"
-    },
-    {
-      "id": 29,
-      "company_name": "Buzzbean",
-      "email": "gizacs@tinypic.com",
-      "phone": "443-739-8440",
-      "slogan": "drive proactive e-tailers"
-    },
-    {
-      "id": 30,
-      "company_name": "Demizz",
-      "email": "gtuckeyt@usgs.gov",
-      "phone": "389-878-2615",
-      "slogan": "monetize transparent interfaces"
-    },
-    {
-      "id": 31,
-      "company_name": "Meembee",
-      "email": "wbraunu@senate.gov",
-      "phone": "349-531-6007",
-      "slogan": "enhance integrated portals"
-    },
-    {
-      "id": 32,
-      "company_name": "Yakidoo",
-      "email": "haylottv@meetup.com",
-      "phone": "220-224-0339",
-      "slogan": "deliver real-time networks"
-    },
-    {
-      "id": 33,
-      "company_name": "Devcast",
-      "email": "kcoghillw@tamu.edu",
-      "phone": "841-512-7282",
-      "slogan": "brand strategic paradigms"
-    },
-    {
-      "id": 34,
-      "company_name": "BlogXS",
-      "email": "atilsonx@ucoz.com",
-      "phone": "373-914-1980",
-      "slogan": "whiteboard bleeding-edge web services"
-    },
-    {
-      "id": 35,
-      "company_name": "Edgetag",
-      "email": "hsatchelly@nymag.com",
-      "phone": "672-212-7905",
-      "slogan": "unleash sticky web-readiness"
-    },
-    {
-      "id": 36,
-      "company_name": "Jetwire",
-      "email": "rflorioz@cdc.gov",
-      "phone": "595-715-4350",
-      "slogan": "enhance B2C relationships"
-    },
-    {
-      "id": 37,
-      "company_name": "Dabjam",
-      "email": "ebrewers10@webnode.com",
-      "phone": "316-691-2298",
-      "slogan": "evolve user-centric solutions"
-    },
-    {
-      "id": 38,
-      "company_name": "Quamba",
-      "email": "eiacobetto11@elegantthemes.com",
-      "phone": "223-875-8978",
-      "slogan": "facilitate wireless infomediaries"
-    },
-    {
-      "id": 39,
-      "company_name": "Kwimbee",
-      "email": "pfiennes12@prweb.com",
-      "phone": "997-496-2975",
-      "slogan": "enhance customized e-business"
-    },
-    {
-      "id": 40,
-      "company_name": "Eire",
-      "email": "kpaunsford13@bloomberg.com",
-      "phone": "271-489-8616",
-      "slogan": "utilize cutting-edge portals"
-    },
-    {
-      "id": 41,
-      "company_name": "Voonyx",
-      "email": "prowlatt14@slate.com",
-      "phone": "896-587-3230",
-      "slogan": "streamline turn-key e-markets"
-    },
-    {
-      "id": 42,
-      "company_name": "Youopia",
-      "email": "hgillitt15@narod.ru",
-      "phone": "611-491-5102",
-      "slogan": "morph sexy content"
-    },
-    {
-      "id": 43,
-      "company_name": "Photobug",
-      "email": "iwimpenny16@w3.org",
-      "phone": "823-595-4047",
-      "slogan": "brand mission-critical platforms"
-    },
-    {
-      "id": 44,
-      "company_name": "Riffpath",
-      "email": "escoyles17@miibeian.gov.cn",
-      "phone": "773-937-4532",
-      "slogan": "enhance vertical content"
-    },
-    {
-      "id": 45,
-      "company_name": "Skivee",
-      "email": "smorecombe18@sohu.com",
-      "phone": "505-898-7514",
-      "slogan": "drive enterprise interfaces"
-    },
-    {
-      "id": 46,
-      "company_name": "Riffwire",
-      "email": "oraynham19@nifty.com",
-      "phone": "690-772-7077",
-      "slogan": "seize granular bandwidth"
-    },
-    {
-      "id": 47,
-      "company_name": "Aibox",
-      "email": "fkeetch1a@chron.com",
-      "phone": "790-704-2173",
-      "slogan": "reintermediate granular eyeballs"
-    },
-    {
-      "id": 48,
-      "company_name": "Zoombox",
-      "email": "mdumblton1b@about.me",
-      "phone": "884-791-5439",
-      "slogan": "orchestrate killer e-commerce"
-    },
-    {
-      "id": 49,
-      "company_name": "Zoomcast",
-      "email": "rhann1c@seattletimes.com",
-      "phone": "445-429-2946",
-      "slogan": "incentivize virtual networks"
-    },
-    {
-      "id": 50,
-      "company_name": "Linktype",
-      "email": "mdavydochkin1d@sitemeter.com",
-      "phone": "974-429-7929",
-      "slogan": "mesh killer e-tailers"
+      "imageurl": "https://media.licdn.com/dms/image/v2/D4E0BAQFC-h7xiavwaw/company-logo_200_200/company-logo_200_200/0/1701092188495/biopago_logo?e=1752710400&v=beta&t=tu85BeOLE6DRqphzVpHfrDlGac8ePxSFCvd-dTrbCcI"
     }
   ]
 }
