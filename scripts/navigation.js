@@ -1,8 +1,8 @@
 let icon = document.querySelector('#hamburgerMenu');
-let menu = document.querySelector('#navigationList');
+let animated = document.querySelector('#animetedNavigation');
 
 icon.addEventListener('click', function() {
-    menu.classList.toggle('hidden');
+    animated.classList.toggle('open');
 })
 
 /* Wayfinding */

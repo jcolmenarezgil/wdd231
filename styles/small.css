@@ -115,7 +115,8 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li a, button {
+nav ul li a,
+button {
     padding: var(--size-2) var(--size-3);
     color: var(--blacktone);
     background-color: var(--whitetone);
@@ -127,7 +128,8 @@ nav ul li a, button {
 }
 
 nav ul li a:hover,
-.hamburger-menu:hover, button:hover {
+.hamburger-menu:hover,
+button:hover {
     background-color: var(--blacktone);
     color: var(--whitetone);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -137,12 +139,35 @@ nav ul li a:hover,
 .hamburger-menu {
     padding: var(--size-2) var(--size-3);
     border-radius: var(--radius-1);
+    font-size: var(--size-4);
+}
+
+.hamburger-menu::before {
+    content: "\2630";
+}
+
+.hamburger-menu.open::before {
+    content: "\2715";
 }
 
 nav ul li a.active {
     background-color: var(--blacktone);
     color: var(--whitetone);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
 }
 
 /* main section home */

@@ -63,6 +63,7 @@ footer p {
         flex-direction: row;
         list-style: none;
         justify-content: space-around;
+        overflow: visible;
     }
     
     .header-container .author {
@@ -87,6 +88,7 @@ footer p {
     main section:nth-child(4) {
         grid-column: span 3;
     }
+    
     
 }
 
