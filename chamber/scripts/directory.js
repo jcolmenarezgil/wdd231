@@ -21,16 +21,16 @@ const displaycompanys = (companys) => {
         companyName.textContent = `${company.company_name}`;
         phone.textContent = `Phone: ${company.phone}`;
         email.textContent = `Email: ${company.email}`;
-        /* portrait.setAttribute('src', company.imageurl); */
-        /* portrait.setAttribute('alt', `Portrait of ${company.company_name}`); */
-        /* portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('src', company.imageurl);
+        portrait.setAttribute('alt', `Portrait of ${company.company_name}`);
+        portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440'); */
+        portrait.setAttribute('height', '440');
 
         card.appendChild(companyName);
         card.appendChild(phone);
         card.appendChild(email);
-        /* card.appendChild(portrait); */
+        card.appendChild(portrait);
 
         cards.appendChild(card);
     });
