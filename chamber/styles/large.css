@@ -1,0 +1,35 @@
+@media (min-width: 32em) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--lapis-lazuli);
+        color: var(--whitetone);
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav ul li {
+    }
+    
+    nav ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: var(--whitetone);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+}

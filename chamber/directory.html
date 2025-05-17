@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Directory</title>
     <meta name="description"
-        content="Directory of members of the telecommunications and technology chamber of commerce of the Central Region of Venezuela">
+        content="Directory of members of the telecommunications and technology chamber of commerce of the Central Region of Venezuela by Jose D. Colmenarez Gil for WDD 231">
+    <meta name="author" content="Jose D. Colmenarez Gil">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="16x16">
     <!-- styles -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/large.css">
+        <!-- social media meta -->
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:description"
+        content="Directory of members of the telecommunications and technology chamber of commerce of the Central Region of Venezuela by Jose D. Colmenarez Gil for WDD 231">
+    <meta property="og:image" content="images/open-graph-dir.png">
+    <meta property="og:url" content="https://jcolmenarezgil.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +28,36 @@
         rel="stylesheet">
     <!-- scripts -->
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 
 <body>
     <header>
-
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber of ICT Central Region of Venezuela Logo">
+            <h1>Chamber of ICT Central Region of Venezuela</h1>
+        </div>
+        <div id="mainMenu" class="main-menu"></div>
+        <nav id="navAnimation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-
+        <div class="hero">
+            <h2>Directory of Members</h2>
+        </div>
         <div id="cards"></div>
-
     </main>
     <footer>
-
+        <p> 2025 Chamber of ICT Central Region of Venezuela</p>
+        <p>All rights reserved.</p>
+        <p>Developed by Jose D. Colmenarez Gil</p>
     </footer>
 </body>
 

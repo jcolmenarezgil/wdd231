@@ -13,7 +13,7 @@ async function getCompanyData() {
 const displaycompanys = (companys) => {
     companys.forEach((company) => {
         let card = document.createElement('section');
-        let companyName = document.createElement('h2');
+        let companyName = document.createElement('h3');
         let phone = document.createElement('p');
         let email = document.createElement('p');
         let portrait = document.createElement('img');
@@ -22,6 +22,7 @@ const displaycompanys = (companys) => {
         phone.textContent = `Phone: ${company.phone}`;
         email.textContent = `Email: ${company.email}`;
         portrait.setAttribute('src', company.imageurl);
+        portrait.setAttribute('class', 'company-portrait');
         portrait.setAttribute('alt', `Portrait of ${company.company_name}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
