@@ -65,6 +65,15 @@ p {
     height: auto;
 }
 
+.chamber-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--whitetone);
+    margin-left: 10px;
+}
+
+/* main-menu */
+
 .main-menu {
     padding: 0.8rem;
 }
