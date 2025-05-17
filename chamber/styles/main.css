@@ -133,6 +133,19 @@ nav ul li a {
     min-height: 290px;
 }
 
+/* membership */
+.gold {
+    background-color: var(--tangerine);
+}
+
+.silver {
+    background-color: var(--eggplant);
+}
+
+.member {
+    background-color: var(--lapis-lazuli);
+}
+
 main {
     max-width: 890px;
     margin: 0 auto;
@@ -167,7 +180,7 @@ section {
 }
 
 .company-portrait {
-    width: 100%;
+    width: 251.33px;
     height: auto;
     border-radius: 16px;
 }

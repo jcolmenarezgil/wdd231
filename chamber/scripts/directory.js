@@ -18,9 +18,20 @@ const displaycompanys = (companys) => {
         let email = document.createElement('p');
         let address = document.createElement('p');
         let website = document.createElement('p');
+        let membership = document.createElement('p');
         let portrait = document.createElement('img');
 
         companyName.textContent = `${company.company_name}`;
+        membership.textContent = `Membership: ${company.membership}`;
+        if (company.membership === 'Gold') {
+            card.setAttribute('class', 'gold');
+        } else if (company.membership === 'Silver') {
+            card.setAttribute('class', 'silver');
+        } else if (company.membership === 'Member') {
+            card.setAttribute('class', 'member');
+        } else {
+            card.setAttribute('class', 'default');
+        }
         phone.textContent = `Phone: ${company.phone}`;
         address.textContent = `Address: ${company.address}`;
         website.textContent = `Website: ${company.website}`;
@@ -38,6 +49,7 @@ const displaycompanys = (companys) => {
         card.appendChild(email);
         card.appendChild(address);
         card.appendChild(website);
+        card.appendChild(membership);
         card.appendChild(portrait);
 
         cards.appendChild(card);
