@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chamber of ICT Central Region of Venezuela</title>
+    <title>Chamber of ICT Central Region of Venezuela</title>
     <meta name="description"
         content="Directory of members of the telecommunications and technology chamber of commerce of the Central Region of Venezuela by Jose D. Colmenarez Gil for WDD 231">
     <meta name="author" content="Jose D. Colmenarez Gil">
@@ -28,6 +28,7 @@
         rel="stylesheet">
     <!-- scripts -->
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
 
 </head>
@@ -56,9 +57,10 @@
         <div id="cards"></div>
     </main>
     <footer>
-        <p> 2025 Chamber of ICT Central Region of Venezuela</p>
+        <p>&copy; <span id="currentyear"></span> Chamber of ICT Central Region of Venezuela</p>
         <p>All rights reserved.</p>
         <p>Developed by Jose D. Colmenarez Gil</p>
+        <p class="update-mark"><b>Last Update:</b> <span id="lastUpdated"></span></p>
     </footer>
 </body>
 

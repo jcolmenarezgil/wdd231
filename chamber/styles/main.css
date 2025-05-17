@@ -108,7 +108,7 @@ nav ul li {
 }
 
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     background-color: var(--dark-purple);
     cursor: pointer;
 }
@@ -172,12 +172,3 @@ section {
     border-radius: 16px;
 }
 
-/* footer */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--dark-purple);
-    color: var(--whitetone);
-}

@@ -15,6 +15,7 @@
       "email": "no-reply@transactional.cashea.app",
       "phone": "+58 212-8190114",
       "address": "Baruta, La Trinidad, Venezuela",
+      "website": "https://www.cashea.app/",
       "imageurl": "https://cdn.prod.website-files.com/632db6924fcc7661685adfa8/664776c9b680e021178d3a07_Logo_Cashea.png"
     },
     {
@@ -23,6 +24,7 @@
       "email": "digitel@digitel.com.ve",
       "phone": "+58 412-9121121",
       "address": "Caracas, Venezuela",
+      "website": "https://www.digitel.com.ve/",
       "imageurl": "https://cdn.prod.website-files.com/66195df65acda9133eff051b/6740700a15c0ac9b15898e6b_logo_digitel_svg_color.svg"
     },
     {
@@ -31,6 +33,7 @@
       "email": "soporte@niuprotector.net",
       "phone": "+58 412-9342078",
       "address": "Carabobo, Venezuela",
+      "website": "https://niuprotector.net/",
       "imageurl": "https://niuprotector.net/Niu_Protector_negro.4c39794ce4a56a8437c6.png"
     },
     {
@@ -39,6 +42,7 @@
       "email": "sainsyca@gmail.com",
       "phone": "+58 241-6173171",
       "address": "Urb Prebol, Carabobo, Venezuela",
+      "website": "https://saintnet.com",
       "imageurl": "https://saintnet.com/wp-content/uploads/2020/05/Saint-blanco.png"
     },
     {
@@ -47,6 +51,7 @@
       "email": "a2softway@a2.com.ve",
       "phone": "+58 261-7592770",
       "address":"La Pastora, Maracaibo",
+      "website": "https://a2softway.com",
       "imageurl": "https://http2.mlstatic.com/D_NQ_NP_2X_605615-MLV25271036514_012017-F.webp"
     },
     {
@@ -55,6 +60,7 @@
       "email": "soporte@biopagobdv.com",
       "phone": "785-467-3941",
       "address":"Caracas, Venezuela",
+      "website": "https://biopagobdv.com",
       "imageurl": "https://media.licdn.com/dms/image/v2/D4E0BAQFC-h7xiavwaw/company-logo_200_200/company-logo_200_200/0/1701092188495/biopago_logo?e=1752710400&v=beta&t=tu85BeOLE6DRqphzVpHfrDlGac8ePxSFCvd-dTrbCcI"
     }
   ]
