@@ -5,6 +5,8 @@
       "company_name": "COMPORACION FIBEX TELECOM, C.A.",
       "email": "info@indepenfibextelecom.net",
       "phone": "+58 212-3108300",
+      "address": "Chacao, Caracas, Venezuela",
+      "website": "https://www.fibextelecom.net/",
       "imageurl": "https://www.fibextelecom.net/assets/images/LOGOFIBEXHORIZONTALPOSITIVO.png"
     },
     {
@@ -12,6 +14,7 @@
       "company_name": "GRUPO CASHEA VE, C.A.",
       "email": "no-reply@transactional.cashea.app",
       "phone": "+58 212-8190114",
+      "address": "Baruta, La Trinidad, Venezuela",
       "imageurl": "https://cdn.prod.website-files.com/632db6924fcc7661685adfa8/664776c9b680e021178d3a07_Logo_Cashea.png"
     },
     {
@@ -19,6 +22,7 @@
       "company_name": "CORPORACIÓN DIGITEL, C.A",
       "email": "digitel@digitel.com.ve",
       "phone": "+58 412-9121121",
+      "address": "Caracas, Venezuela",
       "imageurl": "https://cdn.prod.website-files.com/66195df65acda9133eff051b/6740700a15c0ac9b15898e6b_logo_digitel_svg_color.svg"
     },
     {
@@ -26,6 +30,7 @@
       "company_name": "NIU PROTECTOR, C.A.",
       "email": "soporte@niuprotector.net",
       "phone": "+58 412-9342078",
+      "address": "Carabobo, Venezuela",
       "imageurl": "https://niuprotector.net/Niu_Protector_negro.4c39794ce4a56a8437c6.png"
     },
     {
@@ -33,6 +38,7 @@
       "company_name": "SAINT DE VENEZUELA, C.A.",
       "email": "sainsyca@gmail.com",
       "phone": "+58 241-6173171",
+      "address": "Urb Prebol, Carabobo, Venezuela",
       "imageurl": "https://saintnet.com/wp-content/uploads/2020/05/Saint-blanco.png"
     },
     {
@@ -40,6 +46,7 @@
       "company_name": "A2 SOFTWAY C.A",
       "email": "a2softway@a2.com.ve",
       "phone": "+58 261-7592770",
+      "address":"La Pastora, Maracaibo",
       "imageurl": "https://http2.mlstatic.com/D_NQ_NP_2X_605615-MLV25271036514_012017-F.webp"
     },
     {
@@ -47,6 +54,7 @@
       "company_name": "BIOPAGO C.A.",
       "email": "soporte@biopagobdv.com",
       "phone": "785-467-3941",
+      "address":"Caracas, Venezuela",
       "imageurl": "https://media.licdn.com/dms/image/v2/D4E0BAQFC-h7xiavwaw/company-logo_200_200/company-logo_200_200/0/1701092188495/biopago_logo?e=1752710400&v=beta&t=tu85BeOLE6DRqphzVpHfrDlGac8ePxSFCvd-dTrbCcI"
     }
   ]
