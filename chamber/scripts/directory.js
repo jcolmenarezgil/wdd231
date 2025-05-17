@@ -12,7 +12,7 @@ async function getCompanyData() {
 }
 
 const displaycompanys = (companys) => {
-    cards.innerHTML = ''; // Limpia el contenido anterior
+    cards.innerHTML = ''; 
 
     companys.forEach((company) => {
         let card = document.createElement('section');
@@ -59,7 +59,7 @@ const displaycompanys = (companys) => {
     });
 }
 
-// Event listeners para los botones de alternancia
+// Event listeners
 gridButton.addEventListener('click', () => {
     cards.classList.remove('list-view');
     cards.classList.add('grid-view');
