@@ -14,6 +14,22 @@
     --graytone: #B7B7B7;
 }
 
+/* dark-mode */
+body.dark-mode {
+    --lapis-lazuli: #90caf9ff; 
+    --dark-purple: #f48fb1ff; 
+    --eggplant: #ce93d8ff; 
+    --tangerine: #ffb74dff; 
+    --beige: #424242ff;    
+    /* generals */
+    --blacktone: #F7F7F7; 
+    --whitetone: #333A3F; 
+    --graytone: #616161;
+    /* dark-mode */
+    background-color: var(--whitetone); 
+    color: var(--blacktone);
+}
+
 /* global */
 * {
     box-sizing: border-box;
@@ -65,6 +81,19 @@ p {
 .main-menu.open::before {
     content: "\2715";
     font-size: 48px;
+}
+
+.toggle-mode::before {
+    content: "\2600"; 
+    font-size: 48px;
+}
+
+.toggle-mode.dark-mode-active::before {
+    content: "\263D"; 
+}
+
+.toggle-mode:hover {
+    cursor: pointer;
 }
 
 header {
@@ -131,6 +160,57 @@ nav ul li a {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
     min-height: 290px;
+}
+
+.display-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.display-toggle div {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.display-toggle div.active {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Estilo de cuadrícula original */
+    gap: 20px;
+}
+
+#cards.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+#cards.list-view section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#cards.list-view section img.company-portrait {
+    display: none; /* Oculta la imagen en la vista de lista */
+}
+
+#cards.list-view section h3 {
+    flex-grow: 1; /* El nombre de la compañía ocupa el espacio restante */
+    margin-right: 10px;
+}
+
+#cards.list-view section p {
+    margin-right: 10px;
 }
 
 /* membership */

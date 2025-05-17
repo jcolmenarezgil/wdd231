@@ -1,16 +1,19 @@
 const url = 'https://jcolmenarezgil.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
+const gridButton = document.querySelector('#grid-style');
+const listButton = document.querySelector('#list-style');
 
 async function getCompanyData() {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        /* console.table(data); */
         displaycompanys(data.companys);
     }
 }
 
 const displaycompanys = (companys) => {
+    cards.innerHTML = ''; // Limpia el contenido anterior
+
     companys.forEach((company) => {
         let card = document.createElement('section');
         let companyName = document.createElement('h3');
@@ -55,5 +58,20 @@ const displaycompanys = (companys) => {
         cards.appendChild(card);
     });
 }
+
+// Event listeners para los botones de alternancia
+gridButton.addEventListener('click', () => {
+    cards.classList.remove('list-view');
+    cards.classList.add('grid-view');
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
+});
+
+listButton.addEventListener('click', () => {
+    cards.classList.remove('grid-view');
+    cards.classList.add('list-view');
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
+});
 
 getCompanyData();
