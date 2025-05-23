@@ -1,0 +1,77 @@
+:root {
+    --heading: "Roboto Condensed", sans-serif;
+    --content: "Space Mono", monospace;
+    --font-size-1: 1.2rem;
+    --font-size-2: 2.5rem;
+    --primary-color: #142d4b;
+    --secondary-color: #9fc9c0;
+    --body-bg-color: #f5f7fa;
+    --title-color: #9dffaf;
+
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--heading);
+    font-size: var(--font-size-2);
+    color: var(--title-color);
+    text-align: center;
+}
+
+p,
+span,
+footer {
+    font-family: var(--content);
+    font-size: var(--font-size-1);
+    color: #000000;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-family: var(--content);
+    font-size: 0.8rem;
+    color: #000000;
+    text-align: center;
+}

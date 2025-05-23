@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeatherMap.org API Test</title>
+    <meta name="description"
+        content="A simple test of the OpenWeatherMap.org API to get the current temperature in Trier, Germany.">
+    <meta name="author" content="JOSE D. COLMENAREZ GIL">
+<!-- favico -->
+    <link rel="icon" href="images/germany.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="scripts/weather.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <h1>OpenWeatherMap.org API Test</h1>
+    </header>
+    <main>
+        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+    </main>
+    <footer>
+        JOSE D. COLMENAREZ GIL | OpenWeatherMap.org | CC BY-SA 4.0
+    </footer>
+</body>
+
+</html>
