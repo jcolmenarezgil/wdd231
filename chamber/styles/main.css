@@ -327,6 +327,14 @@ section {
     border-radius: 16px;
 }
 
+.company-details a {
+    text-decoration-color: var(--blacktone);
+    text-decoration: underline;
+    font-size: 1rem;
+    padding: var(--size-1);
+    font-family: var(--Body);
+}
+
 .tabs {
     display: flex;
     flex-direction: column;
