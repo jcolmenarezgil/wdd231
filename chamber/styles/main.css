@@ -327,7 +327,7 @@ section {
     border-radius: 16px;
 }
 
-.company-details a {
+.company-details section a {
     text-decoration-color: var(--blacktone);
     text-decoration: underline;
     font-size: 1rem;
