@@ -55,6 +55,7 @@ const displayCompanys = (companys, container, filterGoldSilver = false) => {
         website.setAttribute('href', company.website);
         website.setAttribute('target', '_blank');
         website.setAttribute('rel', 'noopener noreferrer');
+        website.setAttribute('class', 'company-website');
         website.textContent = `Website`; 
 
         portrait.setAttribute('src', company.imageurl);
