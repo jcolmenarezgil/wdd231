@@ -203,11 +203,15 @@ nav ul li a {
 }
 
 
-#cards {
+.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
     min-height: 290px;
+}
+
+.featured-grid-view {
+    margin-top: var(--size-3);
 }
 
 .display-toggle {
