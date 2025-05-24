@@ -68,6 +68,10 @@ p {
     text-align: left;
 }
 
+.tac {
+    text-align: center;
+}
+
 /* flex */
 
 .flex {
@@ -306,6 +310,28 @@ body {
     align-items: center;
     text-align: center;
     padding: 50px 20px;
+    position: relative;
+}
+
+.call-to-action {
+    position: absolute;
+    color: var(--whitetone);
+    text-decoration: none;
+    border-radius: 16px;
+    background-color: var(--dark-purple);
+    bottom: 0;
+    font-family: var(--Body);
+    padding: var(--size-2) var(--size-2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.call-to-action:hover {
+    background-color: var(--eggplant);
+}
+
+.call-to-action:active {
+    bottom: 9%;
 }
 
 section {
