@@ -328,11 +328,12 @@ section {
 }
 
 .company-website {
-    text-decoration-color: var(--blacktone);
-    text-decoration: underline;
+text-decoration: underline;
     font-size: 1rem;
     padding: var(--size-1);
     font-family: var(--Body);
+    color: var(--blacktone);
+    font-weight: 900;
 }
 
 .tabs {
