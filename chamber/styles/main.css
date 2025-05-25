@@ -29,8 +29,8 @@
 body.dark-mode {
     --lapis-lazuli: #90caf9ff;
     --dark-purple: #f48fb1ff;
-    --eggplant: #ce93d8ff;
-    --tangerine: #ffb74dff;
+    --eggplant: rgb(116, 62, 126);
+    --tangerine: rgb(131, 97, 45);
     --beige: #424242ff;
     /* generals */
     --blacktone: #F7F7F7;
@@ -324,6 +324,8 @@ body {
     padding: var(--size-2) var(--size-2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    bottom: 12%;
+    max-height: 48px;
 }
 
 .call-to-action:hover {

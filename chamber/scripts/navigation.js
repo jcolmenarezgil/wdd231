@@ -8,8 +8,14 @@ icon.addEventListener('click', function() {
 
 /* Wayfinding */
 let currentPage = window.location.pathname.split('/').pop();
+
+if (currentPage === '' || currentPage === 'index.html') {
+    currentPage = 'index.html';
+}
+
 let navLinks = document.querySelectorAll('#navAnimation ul li a');
 console.log("Current Page:", currentPage);
+
 navLinks.forEach(link => {
     console.log("Link href:", link.getAttribute('href'));
     if (link.getAttribute('href') === currentPage) {
