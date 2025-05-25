@@ -231,6 +231,10 @@ nav ul li a {
     border-radius: 5px;
 }
 
+.dark-mode .display-toggle div.active {
+    color: #333A3F !important;
+}
+
 .display-toggle div.active {
     background-color: #eee;
     font-weight: bold;
