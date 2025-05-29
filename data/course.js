@@ -1,4 +1,4 @@
-const courses = [
+export const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -77,64 +77,5 @@ const courses = [
         completed: false
     }
 ]
-/* source */
-const courseList = document.querySelector('#courseList');
-const totalCredits = document.querySelector('#totalCredits');
-/* Course filters buttons*/
-const allCoursesBtn = document.querySelector('#allCourses');
-const wddCoursesBtn = document.querySelector('#wddCourses');
-const cseCoursesBtn = document.querySelector('#cseCourses');
 
-/* Courses array */
-const allCourses = courses;
-const cseCourses = courses.filter(course => course.subject === 'CSE');
-const wddCourses = courses.filter(course => course.subject === 'WDD');
-
-/* Function to display courses */
-function displayCourses(courses) {
-    courseList.innerHTML = ''; // Clear the list before displaying new courses
-    courses.forEach(course => {
-        const courseItem = document.createElement('div');
-        courseItem.classList.add('course-item');
-        if (course.completed) {
-            courseItem.classList.add('Completed');
-        } else {
-            courseItem.classList.add('in-progress');
-        }
-        courseItem.innerHTML = `
-            <div class="">${course.subject} ${course.number}</div>
-        `;
-        courseList.appendChild(courseItem);
-    });
-}
-
-function calculateTotalCredits(courses) {
-    return courses.reduce((acc, course) => acc + course.credits, 0);
-}
-
-
-displayCourses(allCourses); // Display all courses by default
-totalCredits.innerHTML = `The total number of credits earned is: ${calculateTotalCredits(allCourses)}`; // Display total credits for all courses
-
-/* Event listeners for filter buttons */
-/* reduce and get the displayed only Completed credist  */
-allCoursesBtn.addEventListener('click', () => {
-    displayCourses(allCourses);
-    /* get only completed credist */
-    const completedCourses = allCourses.filter(course => course.completed);
-    const total = completedCourses.reduce((acc, course) => acc + course.credits, 0);
-    totalCredits.innerHTML = `The total number of credits earned is: ${total}`;
-});
-wddCoursesBtn.addEventListener('click', () => {
-    displayCourses(wddCourses);
-    completedWddCourses = wddCourses.filter(course => course.completed);
-    const totalWdd = completedWddCourses.reduce((acc, course) => acc + course.credits, 0);
-    totalCredits.innerHTML = `Total Credits earned in WDD Courses is: ${totalWdd}`;
-});
-cseCoursesBtn.addEventListener('click', () => {
-    displayCourses(cseCourses);
-    completedCseCourses = cseCourses.filter(course => course.completed);
-    const totalCse = completedCseCourses.reduce((acc, course) => acc + course.credits, 0);
-    totalCredits.innerHTML = `Total Credits earned in CSE Courses is: ${totalCse}`;
-});
-
+export default courses;

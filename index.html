@@ -33,7 +33,6 @@
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -90,6 +89,7 @@
                 <h2>Web and Computer Programming Certificate</h2>
             </div>
             <div class="body-card">
+                <dialog id="course-details"></dialog>
                 <div class="coursesFilters">
                     <button id="allCourses">
                         All Courses
@@ -112,6 +112,7 @@
         <p>&copy; <span id="currentyear"></span> 🚀 <span>Jose David Colmenarez Gil 🚀 Venezuela.</span></p>
         <p class="update-mark">Last Update: <span id="lastUpdated"></span></p>
     </footer>
+    <script src="scripts/course-details.mjs" type="module"></script>
 </body>
 
 </html>
