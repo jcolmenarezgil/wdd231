@@ -73,8 +73,7 @@
                     </label>
 
                     <label for="organizational-title">Organizational title
-                        <input type="text" name="organizational-title" id="organizational-title"
-                            title="Organizational title of the applicant" title="Organizational title of the applicant (min 7 alphanumeric characters, spaces, and hyphens)" pattern="^[a-zA-Z0-9\s-]{7,}$">
+                        <input type="text" name="organizational-title" id="organizational-title" title="Organizational title of the applicant (min 7 alphanumeric characters, spaces, and hyphens)" pattern="^[a-zA-Z0-9\s-]{7,}$" required>
                     </label>
 
                     <label for="email">Email Address
@@ -84,7 +83,7 @@
 
                     <label for="phone">Phone Number
                         <input type="tel" name="phone" id="phone" title="Contact phone number"
-                            autocomplete="tel-national" required>
+                            autocomplete="tel" required>
                     </label>
 
                     <label for="organization">Organization
