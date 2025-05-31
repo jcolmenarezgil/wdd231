@@ -79,7 +79,7 @@
         text-align: left;
     }
 
-    section.join h2 {
+    section.join h1 {
         grid-column: span 5;
     }
 
@@ -116,7 +116,7 @@ section.join {
     margin: var(--size-2);
 }
 
-section.join h2 {
+section.join h1 {
     font-family: var(--Heading);
 }
 
