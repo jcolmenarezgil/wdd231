@@ -53,11 +53,11 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="applicant-form">
+        <section class="join">
             <h2>Membership Application Form</h2>
 
-            <form method="get">
+            <form class="applicant" method="get">
                 <fieldset>
                     <legend>Personal & Contact Info</legend>
 
@@ -77,8 +77,7 @@
                     </label>
 
                     <label for="email">Email Address
-                        <input type="email" name="email" id="email" title="Email of the applicant" autocomplete="email"
-                            placeholder="your-email@organizational.com" required>
+                        <input type="email" name="email" id="email" title="Email of the applicant" autocomplete="email" placeholder="your-email@organizational.com" required>
                     </label>
 
                     <label for="phone">Phone Number
@@ -92,43 +91,47 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="levels">
                     <legend>Membership Level</legend>
 
                     <label for="np-membership">
                         <input type="radio" name="membership" id="np-membership" value="np-membership">
+                        Non Profit
                     </label>
 
                     <label for="bronze">
                         <input type="radio" name="membership" id="bronze" value="bronze">
+                        Bronze Membership
                     </label>
 
                     <label for="silver">
                         <input type="radio" name="membership" id="silver" value="silver">
+                        Silver Membership
                     </label>
 
                     <label for="gold">
                         <input type="radio" name="membership" id="gold" value="gold">
+                        Gold Membership
                     </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>About your Business/organization</legend>
                     <label for="description">Description
-                        <textarea name="description" id="description" title="Organization's description"></textarea>
+                        <textarea name="description" id="description" rows="5" title="Organization's description"></textarea>
                     </label>
                 </fieldset>
 
                 <input type="hidden" name="timestamp" id="timestamp">
 
-                <input type="submit" value="Send Applicantion for Chamber">
+                <input type="submit" value="Send My Applicantion">
 
             </form>
 
-        </section>
-        <section>
-            <h2>Membership Levels</h2>
-            <div id="membershipLevels"></div>
+            <div class="membership_tiers">
+                <h2>Membership Levels</h2>
+                <div id="membershipLevels"></div>
+            </div>
         </section>
     </main>
     <footer>

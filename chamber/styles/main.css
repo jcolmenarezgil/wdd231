@@ -11,7 +11,7 @@
     /* generals */
     --blacktone: #333A3F;
     --whitetone: #F7F7F7;
-    --graytone: #B7B7B7;
+    --graytone: #e9e9e9;
     /* size */
     --size-1: 0.5rem;
     --size-2: 1rem;
@@ -23,6 +23,8 @@
     --size-8: 4rem;
     --size-9: 4.5rem;
     --size-10: 5rem;
+    /* cursor */
+    --pointer: pointer;
 }
 
 /* dark-mode */
