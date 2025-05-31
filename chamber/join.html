@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Chamber of Commerce for ICT of Central Carabobo, Venezuela</title>
+    <meta name="description"
+        content="Submit an application to become part of the Chamber of Commerce for ICT of Central Carabobo, Venezuela by Jose D. Colmenarez Gil for WDD 231">
+    <meta name="author" content="Jose D. Colmenarez Gil">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="16x16">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- social media meta -->
+    <meta property="og:title" content="Join Page | Chamber of Commerce for ICT of Central Carabobo, Venezuela">
+    <meta property="og:description"
+        content="Submit an application to become part of the Chamber of Commerce for ICT of Central Carabobo, Venezuela by Jose D. Colmenarez Gil for WDD 231">
+    <meta property="og:image" content="https://jcolmenarezgil.github.io/wdd231/chamber/images/og-join.png">
+    <meta property="og:url" content="https://jcolmenarezgil.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <!-- scripts -->
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <!-- <script src="scripts/weather.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber of Commerce for ICT of Central Carabobo, Venezuela Logo">
+            <div class="chamber-name">Chamber of Commerce for ICT of Central Carabobo, Venezuela</div>
+        </div>
+        <div id="mainMenu" class="main-menu"></div>
+        <nav id="navAnimation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+                <li>
+                    <div id="toggleMode" class="toggle-mode"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Membership Application Form</h2>
+
+            <form method="get">
+                <fieldset>
+                    <legend>Personal & Contact Info</legend>
+
+                    <label for="name">Applicant's First Name
+                        <input type="text" name="name" id="name" title="Name of the applicant" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label for="lastname">Applicant's Last Name
+                        <input type="text" name="lastname" id="lastname" title="Lastname of the applicant"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="organizational-title">Organizational title
+                        <input type="text" name="organizational-title" id="organizational-title"
+                            title="Organizational title of the applicant" autocomplete="organization-title">
+                    </label>
+
+                    <label for="email">Email Address
+                        <input type="email" name="email" id="email" title="Email of the applicant" autocomplete="email"
+                            placeholder="your-email@organizational.com" required>
+                    </label>
+
+                    <label for="phone">Phone Number
+                        <input type="tel" name="phone" id="phone" title="Contact phone number"
+                            autocomplete="tel-national" required>
+                    </label>
+
+                    <label for="organization">Organization
+                        <input type="text" name="organization" id="organization" title="Business/organization's name"
+                            autocomplete="organization" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+
+                    <label for="np-membership">
+                        <input type="radio" name="membership" id="np-membership" value="np-membership">
+                    </label>
+
+                    <label for="bronze">
+                        <input type="radio" name="membership" id="bronze" value="bronze">
+                    </label>
+
+                    <label for="silver">
+                        <input type="radio" name="membership" id="silver" value="silver">
+                    </label>
+
+                    <label for="gold">
+                        <input type="radio" name="membership" id="gold" value="gold">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>About your Business/organization</legend>
+                    <label for="description">Description
+                        <textarea name="description" id="description" title="Organization's description"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Send Applicantion for Chamber">
+
+            </form>
+
+        </section>
+        <section>
+            <h2>Membership Levels</h2>
+            <div id="membershipLevels"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+
+            <div class="about">
+                <p class="title"><b>Chamber of Commerce for ICT of Central Carabobo, Venezuela</b></p>
+                <p>info@CCCICT.com</p>
+                <p>(+58) 241-855-55-55</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube.webp" alt="youtube chamber" title="Link to Youtube">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter chamber" title="Link to Twitter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/linkedin.webp" alt="linkedin chamber" title="Link to LinkedIn">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>WDD231 Class Project</p>
+                <p>Jose D. Colmenarez Gil</p>
+                <p>&copy; <span id="currentyear"></span> Chamber of Commerce for ICT of Central Carabobo, Venezuela</p>
+                <p class="update-mark"><b>Last Update:</b> <span id="lastUpdated"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
