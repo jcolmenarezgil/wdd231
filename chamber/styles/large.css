@@ -201,7 +201,8 @@ form.applicant .levels label>* {
 
 /* skeleton */
 
-.skeleton {
+.skeleton,
+.card-membership {
     padding: var(--size-2);
     background-color: var(--whitetone);
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
@@ -209,6 +210,16 @@ form.applicant .levels label>* {
     border-radius: var(--size-1);
     height: 98px;
     position: relative;
+    width: 245px;
+    text-align: left;
+
+    animation: slideInFadeIn 0.4s ease-out forwards;
+}
+
+.card-membership:hover {
+    cursor: var(--pointer);
+    color: var(--whitetone);
+    background-color: var(--lapis-lazuli);
 }
 
 .skeleton .rectangle {
@@ -225,9 +236,16 @@ form.applicant .levels label>* {
     animation: wave-squares 2s infinite ease-out;
 }
 
-.skeleton .lines {
+.skeleton .lines,
+.card-membership .order {
     display: flex;
     flex-direction: row;
+}
+
+.card-membership .medal,
+.card-membership .medal img {
+    width: 48px;
+    height: auto;
 }
 
 .skeleton .long-line {
@@ -238,6 +256,10 @@ form.applicant .levels label>* {
     width: 98px;
     height: 15px;
     border-radius: 3px;
+}
+
+.card-membership h3 {
+    font-size: var(--size-2);
 }
 
 .skeleton .short-line {
@@ -260,12 +282,17 @@ form.applicant .levels label>* {
     border-radius: 3px;
 }
 
+.card-membership span {
+    font-family: var(--Body);
+    font-size: 0.8em;
+}
+
 .skeleton [class*="-line"] {
     background: rgba(130, 130, 130, 0.2);
-     background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
-     background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
-     background-size: 800px 100px;
-     animation: wave-lines 2s infinite ease-out;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-lines 2s infinite ease-out;
 }
 
 @keyframes wave-squares {
@@ -282,7 +309,95 @@ form.applicant .levels label>* {
     0% {
         background-position: -468px 0;
     }
-     100% {
+
+    100% {
         background-position: 468px 0;
     }
+}
+
+@keyframes slideInFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+::backdrop {
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog {
+    font-family: var(--Body);
+    text-align: left;
+
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog h2 {
+    text-align: center;
+}
+
+dialog>* {
+    padding: var(--size-1);
+}
+
+dialog button {
+    width: 44px;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog p {
+    font-style: var(--Body);
+    font-weight: 600;
+    text-align: center;
+}
+
+dialog ul li {
+    padding: var(--size-1);
+    list-style: square;
+}
+
+/* page thankyou */
+
+.thankyou {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--Body);
+}
+
+.thankyou ul li {
+    padding: var(--size-1);
+}
+
+.thankyou h2 {
+    font-family: var(--Heading);
+    margin: var(--size-3);
 }

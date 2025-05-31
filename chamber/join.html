@@ -32,6 +32,7 @@
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <!-- <script src="scripts/weather.js" defer></script> -->
+    
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         <section class="join">
             <h2>Membership Application Form</h2>
 
-            <form class="applicant" method="get">
+            <form class="applicant" method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Personal & Contact Info</legend>
 
@@ -73,7 +74,7 @@
 
                     <label for="organizational-title">Organizational title
                         <input type="text" name="organizational-title" id="organizational-title"
-                            title="Organizational title of the applicant" autocomplete="organization-title">
+                            title="Organizational title of the applicant" title="Organizational title of the applicant (min 7 alphanumeric characters, spaces, and hyphens)" pattern="^[a-zA-Z0-9\s-]{7,}$">
                     </label>
 
                     <label for="email">Email Address
@@ -132,6 +133,7 @@
 
             <div class="membership_tiers">
                 <h2>Membership Levels</h2>
+                <dialog id="membershipDetails"></dialog>
                 <div id="membershipLevels" class="container-levels">
 
                     <div class="skeleton">
@@ -197,6 +199,7 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="scripts/members-tiers.mjs"></script>
 </body>
 
 </html>

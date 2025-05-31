@@ -295,6 +295,7 @@ main,
 footer .container {
     max-width: 1040px;
     margin: 0 auto;
+    min-width: 900px;
 }
 
 main .hero {
@@ -303,9 +304,20 @@ main .hero {
     flex-direction: column;
 }
 
+main.thankyou {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* body */
 body {
     background-color: var(--whitetone);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* hero */
@@ -319,8 +331,12 @@ body {
     position: relative;
 }
 
-.call-to-action {
+.absolute-over-hero {
     position: absolute;
+
+}
+
+.call-to-action {
     color: var(--whitetone);
     text-decoration: none;
     border-radius: 16px;
