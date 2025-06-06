@@ -1,0 +1,121 @@
+:root {
+    --heading: "Newsreader", serif;
+    --content: "Inter", sans-serif;
+    /* sizes */
+    --size-00: 0.2rem;
+    --size-0: 0.5rem;
+    --size-1: 0.8rem;
+    --size-2: 1rem;
+    --size-3: 1.2rem;
+    --size-4: 1.5rem;
+    --size-5: 2rem;
+    --size-6: 2.0625rem;
+    /* colors */
+    --blacktone: #333A3F;
+    --whitetone: #F7F7F7;
+    /* color-schema */
+    /* https://coolors.co/1b1f50-bccad7-ec7b09-ededed-82b735-2dacdb */
+    --space-cadet: #1b1f50ff;
+    --french-gray: #bccad7ff;
+    --tangerine: #ec7b09ff;
+    --antiflash-white: #edededff;
+    --apple-green: #82b735ff;
+    --process-cyan: #2dacdbff;
+    /* shadows */
+    --model-1: 6px 5px 9px -9px black, 5px 6px 9px -9px black;
+}
+
+/* globals */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading);
+}
+
+.tac {
+    text-align: center;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--content);
+}
+
+/* main */
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* site-plan */
+.about {
+    background-color: var(--french-gray);
+    padding: var(--size-1);
+    border-radius: var(--size-2);
+    box-shadow: var(--model-1);
+    transition: all .4s ease;
+}
+
+.site-plan section {
+    margin-bottom: var(--size-2);
+}
+
+.about:hover {
+    background-color: var(--tangerine);
+    cursor: pointer;
+}
+
+/* TOOLTIP */
+
+.tooltip {
+    position: relative;
+    background-color: var(--blacktone);
+    padding: var(--size-00);
+    width: fit-content;
+    color: var(--whitetone);
+    border-radius: var(--size-0);
+    margin-bottom: var(--size-0);
+}
+
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: var(--model-1);
+    background-color: var(--blacktone);
+    transform: rotate(45deg);
+}
+
+/* END-TOOLTIP */
