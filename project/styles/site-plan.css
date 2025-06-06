@@ -7,6 +7,8 @@
     border-radius: var(--size-2);
     box-shadow: var(--model-1);
     transition: all .4s ease;
+    min-width: 280px;
+    padding: var(--size-1);
 }
 
 .site-plan section {
@@ -33,9 +35,21 @@ figure.wireframe {
     margin-bottom: var(--size-2);
 }
 
-figure.wireframe img {
-    width: 100%;
-    height: auto;
+.container-wireframe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+figure.wireframe:first-child img {
+    width: 245px;
+    height: 844px;
+}
+
+figure.wireframe:last-child img {
+    height: fit-content;
+    width: 380px;
 }
 
 .isotipo-company {
@@ -97,4 +111,14 @@ figure.wireframe img {
     font-family: var(--content);
     font-weight: 400;
     font-size: var(--size-5);
+}
+
+footer {
+    background-color: var(--apple-green);
+    color: var(--antiflash-white);
+    font-size: var(--size-2);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: var(--size-2);
 }
