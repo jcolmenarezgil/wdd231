@@ -59,6 +59,10 @@ h6 {
     margin: var(--size-1);
 }
 
+.m2 {
+    margin: var(--size-2);
+}
+
 /* font-style */
 .bold {
     font-weight: bold;
