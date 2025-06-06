@@ -1,0 +1,95 @@
+@import url(small.css);
+
+/* site-plan */
+.about {
+    background-color: var(--antiflash-white);
+    padding: var(--size-1);
+    border-radius: var(--size-2);
+    box-shadow: var(--model-1);
+    transition: all .4s ease;
+}
+
+.site-plan section {
+    margin-bottom: var(--size-2);
+}
+
+.about:hover {
+    background-color: var(--tangerine);
+    cursor: pointer;
+}
+
+figure.isologo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--size-2);
+}
+
+figure.wireframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: var(--size-2);
+}
+
+.isotipo-company {
+    width: 98px;
+    height: auto;
+}
+
+.color-sample {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.color-sample .cube {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--size-0);
+}
+
+.color-sample p {
+    margin-left: var(--size-2);
+}
+
+.color-sample .cube {
+    border: 1px solid var(--french-gray);
+}
+
+.color-sampler-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--size-1);
+    margin-top: var(--size-1);
+}
+
+.background {
+    background-color: var(--space-cadet);
+}
+
+.highlighted {
+    background-color: var(--tangerine);
+}
+
+.complement {
+    background-color: var(--apple-green);
+}
+
+.buttons {
+    background-color: var(--process-cyan);
+}
+
+.newsreader {
+    font-family: var(--heading);
+    font-weight: 700;
+    font-size: var(--size-6);
+}
+
+.inter {
+    font-family: var(--content);
+    font-weight: 400;
+    font-size: var(--size-5);
+}

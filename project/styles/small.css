@@ -40,6 +40,8 @@ h6 {
     font-family: var(--heading);
 }
 
+/* text-align */
+
 .tac {
     text-align: center;
 }
@@ -50,6 +52,26 @@ h6 {
 
 .tar {
     text-align: right;
+}
+
+/* margin */
+.m1 {
+    margin: var(--size-1);
+}
+
+/* font-style */
+.bold {
+    font-weight: bold;
+}
+
+/* display */
+.grid {
+
+    display: grid;
+}
+
+.flex {
+    display: flex;
 }
 
 /* body */
@@ -66,23 +88,8 @@ main {
     max-width: 800px;
 }
 
-/* site-plan */
-.about {
-    background-color: var(--french-gray);
-    padding: var(--size-1);
-    border-radius: var(--size-2);
-    box-shadow: var(--model-1);
-    transition: all .4s ease;
-}
 
-.site-plan section {
-    margin-bottom: var(--size-2);
-}
 
-.about:hover {
-    background-color: var(--tangerine);
-    cursor: pointer;
-}
 
 /* TOOLTIP */
 
