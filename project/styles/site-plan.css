@@ -33,9 +33,14 @@ figure.wireframe {
     margin-bottom: var(--size-2);
 }
 
+figure.wireframe img {
+    width: 100%;
+    height: auto;
+}
+
 .isotipo-company {
     width: 98px;
-    height: auto;
+    height: 104px;
 }
 
 .color-sample {
