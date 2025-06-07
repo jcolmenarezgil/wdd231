@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | Chamber of Commerce for ICT of Central Carabobo, Venezuela</title>
+    <title>Discover | Chamber of Commerce for ICT of Central Carabobo, Venezuela</title>
     <meta name="description"
-        content="Submit an application to become part of the Chamber of Commerce for ICT of Central Carabobo, Venezuela by Jose D. Colmenarez Gil for WDD 231">
+        content="Find out more about the companies you can share with at the ICT Chamber of Commerce of Central Carabobo, Venezuela by José D. Colmenarez Gil for DMA 231">
     <meta name="author" content="Jose D. Colmenarez Gil">
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
     <!-- social media meta -->
-    <meta property="og:title" content="Join Page | Chamber of Commerce for ICT of Central Carabobo, Venezuela">
+    <meta property="og:title" content="Discover | Chamber of Commerce for ICT of Central Carabobo, Venezuela">
     <meta property="og:description"
-        content="Submit an application to become part of the Chamber of Commerce for ICT of Central Carabobo, Venezuela by Jose D. Colmenarez Gil for WDD 231">
-    <meta property="og:image" content="https://jcolmenarezgil.github.io/wdd231/chamber/images/og-join.png">
-    <meta property="og:url" content="https://jcolmenarezgil.github.io/wdd231/chamber/join.html">
+        content="Find out more about the companies you can share with at the ICT Chamber of Commerce of Central Carabobo, Venezuela by José D. Colmenarez Gil for DMA 231">
+    <meta property="og:image" content="https://jcolmenarezgil.github.io/wdd231/chamber/images/og-discover.webp">
+    <meta property="og:url" content="https://jcolmenarezgil.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,8 @@
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <!-- <script src="scripts/weather.js" defer></script> -->
-    
+    <script src="scripts/discover.mjs" defer></script>
+
 </head>
 
 <body>
@@ -47,129 +48,15 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li>
                     <div id="toggleMode" class="toggle-mode"></div>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="applicant-form">
-        <section class="join">
-            <h1>Membership Application Form</h1>
+    <main>
 
-            <form class="applicant" method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Personal & Contact Info</legend>
-
-                    <label for="name">Applicant's First Name
-                        <input type="text" name="name" id="name" title="Name of the applicant" autocomplete="given-name"
-                            required>
-                    </label>
-
-                    <label for="lastname">Applicant's Last Name
-                        <input type="text" name="lastname" id="lastname" title="Lastname of the applicant"
-                            autocomplete="family-name" required>
-                    </label>
-
-                    <label for="organizational-title">Organizational title
-                        <input type="text" name="organizational-title" id="organizational-title" title="Organizational title of the applicant (min 7 alphanumeric characters, spaces, and hyphens)" pattern="^[a-zA-Z0-9\s-]{7,}$" required>
-                    </label>
-
-                    <label for="email">Email Address
-                        <input type="email" name="email" id="email" title="Email of the applicant" autocomplete="email"
-                            placeholder="your-email@organizational.com" required>
-                    </label>
-
-                    <label for="phone">Phone Number
-                        <input type="tel" name="phone" id="phone" title="Contact phone number"
-                            autocomplete="tel" required>
-                    </label>
-
-                    <label for="organization">Organization
-                        <input type="text" name="organization" id="organization" title="Business/organization's name"
-                            autocomplete="organization" required>
-                    </label>
-                </fieldset>
-
-                <fieldset class="levels">
-                    <legend>Membership Level</legend>
-
-                    <label for="np-membership">
-                        <input type="radio" name="membership" id="np-membership" value="np-membership">
-                        Non Profit
-                    </label>
-
-                    <label for="bronze">
-                        <input type="radio" name="membership" id="bronze" value="bronze">
-                        Bronze Membership
-                    </label>
-
-                    <label for="silver">
-                        <input type="radio" name="membership" id="silver" value="silver">
-                        Silver Membership
-                    </label>
-
-                    <label for="gold">
-                        <input type="radio" name="membership" id="gold" value="gold">
-                        Gold Membership
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>About your Business/organization</legend>
-                    <label for="description">Description
-                        <textarea name="description" id="description" rows="5"
-                            title="Organization's description"></textarea>
-                    </label>
-                </fieldset>
-
-                <input type="hidden" name="timestamp" id="timestamp">
-
-                <input type="submit" value="Send My Applicantion">
-
-            </form>
-
-            <div class="membership_tiers">
-                <h2>Membership Levels</h2>
-                <dialog id="membershipDetails"></dialog>
-                <div id="membershipLevels" class="container-levels">
-
-                    <div class="skeleton">
-                        <div class="rectangle"></div>
-                        <div class="lines">
-                            <div class="long-line"></div>
-                            <div class="short-line"></div>
-                            <div class="mid-line"></div>
-                        </div>
-                    </div>
-                    <div class="skeleton">
-                        <div class="rectangle"></div>
-                        <div class="lines">
-                            <div class="long-line"></div>
-                            <div class="short-line"></div>
-                            <div class="mid-line"></div>
-                        </div>
-                    </div>
-                    <div class="skeleton">
-                        <div class="rectangle"></div>
-                        <div class="lines">
-                            <div class="long-line"></div>
-                            <div class="short-line"></div>
-                            <div class="mid-line"></div>
-                        </div>
-                    </div>
-                    <div class="skeleton">
-                        <div class="rectangle"></div>
-                        <div class="lines">
-                            <div class="long-line"></div>
-                            <div class="short-line"></div>
-                            <div class="mid-line"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="container">
