@@ -25,6 +25,9 @@
     --size-10: 5rem;
     /* cursor */
     --pointer: pointer;
+    /* margin */
+    --margin-1: 0.5rem;
+    --margin-2: 1rem;
 }
 
 /* dark-mode */
@@ -86,6 +89,16 @@ p {
 
 .flex-column {
     flex-direction: column;
+}
+
+/* margin */
+
+.m1 {
+    margin: var(--margin-1);
+}
+
+.m2 {
+    margin: var(--margin-2);
 }
 
 /* logo */
