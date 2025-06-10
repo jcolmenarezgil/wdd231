@@ -1,0 +1,77 @@
+@import url("small.css");
+
+@media (min-width: 38em) and (max-width: 63.9em) {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        background-color: var(--dark-purple);
+        margin-top: 1.5rem;
+    }
+
+    main .applicant-form {
+        max-width: 980px;
+    }
+
+    #featured-members section {
+        width: 100%;
+    }
+
+    #placesRegion div {
+
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location";
+    }
+
+    #placesRegion div img {
+        width: 300px;
+    }
+
+    #placesRegion div.place-card {
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location" !important;
+    }
+
+    /* skeleton-card */
+
+
+    .skeleton-card {
+        display: grid;
+        max-width: 380px;
+        grid-template-areas:
+            "rectangle name"
+            "rectangle description"
+            "rectangle ." !important;
+    }
+
+    .skeleton-card div.h2 {
+        height: 18px;
+        width: 75%;
+        grid-area: name;
+    }
+
+    .skeleton-card div.img {
+        height: 230px !important;
+        width: 90%;
+        grid-area: rectangle;
+        margin: var(--size-2);
+        align-self: center;
+    }
+
+    .skeleton-card .div.description {
+        grid-area: description;
+    }
+
+    .skeleton-card .description .line-long {
+        height: 14px;
+        width: 68%;
+    }
+
+    .skeleton-card .description .line-short {
+        height: 10px;
+        width: 54%;
+    }
+}

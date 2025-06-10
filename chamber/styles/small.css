@@ -102,7 +102,7 @@ p {
 }
 
 .chamber-name {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--whitetone);
     margin-left: 10px;
@@ -244,7 +244,7 @@ nav ul li a {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* Estilo de cuadrícula original */
     gap: 20px;
 }
@@ -293,9 +293,8 @@ nav ul li a {
 
 main,
 footer .container {
-    max-width: 1040px;
+    max-width: 90vw;
     margin: 0 auto;
-    min-width: 900px;
 }
 
 main .hero {
@@ -378,7 +377,7 @@ section {
 }
 
 .company-website {
-text-decoration: underline;
+    text-decoration: underline;
     font-size: 1rem;
     padding: var(--size-1);
     font-family: var(--Body);
@@ -412,6 +411,158 @@ text-decoration: underline;
     height: 64px;
 }
 
-.weather-forecast > p {
+.weather-forecast>p {
     padding: var(--size-1);
+}
+
+/* placesRegion */
+
+
+#placesRegion {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: var(--size-2);
+}
+
+#placesRegion div.place-card {
+
+    margin: var(--size-1) 8px;
+    border: 1px solid var(--graytone);
+    background-color: var(--whitetone);
+    border-radius: var(--size-1);
+    overflow: hidden;
+    max-width: fit-content;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "location";
+}
+
+#placesRegion div h2 {
+    margin: var(--size-1) 10px;
+    grid-area: name;
+}
+
+#placesRegion div img {
+    width: 100%;
+    grid-area: photograph;
+    align-self: center;
+}
+
+#placesRegion div p {
+    margin: var(--size-1) 10px;
+    grid-area: description;
+    font-size: var(--size-2);
+}
+
+#placesRegion div.address {
+    margin: var(--size-1) 10px;
+    grid-area: location;
+    font-family: var(--Body);
+    font-style: italic;
+    font-weight: bold;
+    color: var(--eggplant);
+    
+}
+
+.learn-more-btn {
+    background-color: var(--lapis-lazuli);
+    color: var(--whitetone);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: var(--size-1);
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin-top: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary-dark-color, #0056b3);
+}
+
+/* skeleton-card */
+
+.skeleton-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--size-3);
+    margin-top: var(--size-2);
+}
+
+.skeleton-card {
+    width: 90vw;
+    height: 280px;
+    border-radius: var(--size-2);
+    border: 1px solid var(--graytone);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    background-color: var(--graytone);
+    display: grid;
+    gap: var(--size-1);
+
+    grid-template-areas:
+        "name"
+        "rectangle"
+        "description";
+}
+
+.skeleton-card div.h2 {
+    grid-area: name;
+    height: 18px;
+    width: 75%;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
+    margin: var(--size-2);
+    border-radius: 6px;
+}
+
+.skeleton-card div.img {
+    grid-area: rectangle;
+    height: 125px;
+    width: 90%;
+    margin: 0 var(--size-1);
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
+}
+
+.skeleton-card .description {
+    grid-area: description;
+}
+
+.skeleton-card .description .line-long {
+    height: 14px;
+    width: 68%;
+    margin: var(--size-1);
+    border-radius: var(--size-1);
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
+}
+
+.skeleton-card .description .line-short {
+    height: 10px;
+    width: 54%;
+    margin: var(--size-1);
+    border-radius: var(--size-1);
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
 }
