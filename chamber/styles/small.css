@@ -427,6 +427,8 @@ section {
 
 #placesRegion div.place-card {
 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
     margin: var(--size-1) 8px;
     border: 1px solid var(--graytone);
     background-color: var(--whitetone);
@@ -479,14 +481,21 @@ section {
     font-size: 0.9em;
     transition: background-color 0.3s ease;
     display: block; 
-    margin-top: -0.5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: var(--size-2) auto;
     width: fit-content;
 }
 
 .learn-more-btn:hover {
     background-color: var(--primary-dark-color, #0056b3);
+}
+
+@media (hover: hover) {
+    .place-card:hover {
+        transform: translateY(-5px);
+        background-color: var(--tangerine) !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
 }
 
 /* skeleton-card */
