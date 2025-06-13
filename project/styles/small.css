@@ -11,7 +11,7 @@
     --size-5: 2rem;
     --size-6: 2.0625rem;
     /* colors */
-    --blacktone: #333A3F;
+    --blacktone: #080b0d;
     --whitetone: #F7F7F7;
     /* color-schema */
     /* https://coolors.co/1b1f50-bccad7-ec7b09-ededed-82b735-2dacdb */
@@ -303,8 +303,9 @@ header .header-banner img {
     background-color: var(--tangerine);
     padding: var(--size-1);
     border-radius: var(--size-6);
-    color: var(--whitetone);
+    color: var(--blacktone);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .call-to-action:hover {
@@ -484,7 +485,8 @@ section.products {
     justify-content: center;
     align-items: center;
     background-color: var(--tangerine);
-    color: var(--whitetone);
+    color: var(--blacktone);
+    font-weight: bold;
     text-decoration: none;
     padding: var(--size-1);
     border-radius: var(--size-3);
