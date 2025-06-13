@@ -24,14 +24,234 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Newsreader:opsz,wght@6..72,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html">UCAIMA <span>IMPORT</span></a>
+            <div class="header-options">
+                <form class="home-search" action="catalog.html" method="get" role="search">
+                    <input type="search" name="search" id="search" placeholder="Search products...">
+                    <button type="submit" aria-label="Search"><img src="images/search.svg" alt="search button"></button>
+                </form>
+                <div class="header-buttons">
+                    <a class="second-option" href="dashboard.html"><img class="white" src="images/account.svg"
+                            alt="account"> Account</a>
+                    <a class="call-to-action" href="cart.html"><img src="images/cart-white.svg" alt="cart-white">Shop
+                        Now</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Explore</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+                <li><a href="dashboard.html">Favorites</a></li>
+            </ul>
+        </nav>
+        <div class="header-banner">
+            <div class="header-banner-text">
+                <h1>UCAIMA IMPORT</h1>
+                <p>Explore our wide range of items and enjoy shopping!</p>
+                <a class="call-to-action" href="cart.html">Shop Now</a>
+            </div>
+
+            <img src="images/header-barner.webp" alt="header-banner">
+
+        </div>
+        <div class="wave-container">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,30L18.5,33.3C36.9,37,74,43,111,40C147.7,37,185,23,222,30C258.5,37,295,63,332,63.3C369.2,63,406,37,443,21.7C480,7,517,3,554,10C590.8,17,628,33,665,43.3C701.5,53,738,57,775,58.3C812.3,60,849,60,886,60C923.1,60,960,60,997,61.7C1033.8,63,1071,67,1108,66.7C1144.6,67,1182,63,1218,61.7C1255.4,60,1292,60,1329,51.7C1366.2,43,1403,27,1440,25C1476.9,23,1514,37,1551,35C1587.7,33,1625,17,1662,11.7C1698.5,7,1735,13,1772,16.7C1809.2,20,1846,20,1883,16.7C1920,13,1957,7,1994,5C2030.8,3,2068,7,2105,10C2141.5,13,2178,17,2215,21.7C2252.3,27,2289,33,2326,30C2363.1,27,2400,13,2437,16.7C2473.8,20,2511,40,2548,53.3C2584.6,67,2622,73,2640,76.7L2658.5,80L2658.5,100L2640,100C2621.5,100,2585,100,2548,100C2510.8,100,2474,100,2437,100C2400,100,2363,100,2326,100C2289.2,100,2252,100,2215,100C2178.5,100,2142,100,2105,100C2067.7,100,2031,100,1994,100C1956.9,100,1920,100,1883,100C1846.2,100,1809,100,1772,100C1735.4,100,1698,100,1662,100C1624.6,100,1588,100,1551,100C1513.8,100,1477,100,1440,100C1403.1,100,1366,100,1329,100C1292.3,100,1255,100,1218,100C1181.5,100,1145,100,1108,100C1070.8,100,1034,100,997,100C960,100,923,100,886,100C849.2,100,812,100,775,100C738.5,100,702,100,665,100C627.7,100,591,100,554,100C516.9,100,480,100,443,100C406.2,100,369,100,332,100C295.4,100,258,100,222,100C184.6,100,148,100,111,100C73.8,100,37,100,18,100L0,100Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="advantages">
+                <div class="ticket">
+                    <img src="images/saving.svg" alt="saving">
+                    <h3>Save Money</h3>
+                    <p>Unlock incredible deals and everyday low prices.</p>
+                </div>
+
+                <div class="ticket">
+                    <img src="images/safety.svg" alt="saving">
+                    <h3>Safety</h3>
+                    <p>Shop with confidence. Your data is protected with secure encryption.</p>
+                </div>
+
+                <div class="ticket">
+                    <img src="images/delivery.svg" alt="saving">
+                    <h3>Fast Shipping</h3>
+                    <p>Get your orders quickly. Fast and reliable delivery, right to your door.</p>
+                </div>
+            </div>
+        </article>
+        <section class="products">
+            <div class="flex flex-row justify-between align-center">
+                <h2>Featured Products</h2>
+                <a href="catalog.html" class="highlighted flex flex-row align-center">Show more <img class="chevron"
+                        src="images/chevron-right.svg" alt="chevron-right"></a>
+            </div>
+            <div id="cards" class="cards-container">
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ads-container">
+            <div class="ads-complete">
+                <h2>Get ready for your next adventure!</h2>
+                <a href="catalog.html?category=trips">Explore Trips</a>
+                <img src="images/trips-items.webp" alt="trips-items">
+            </div>
+
+            <div class="ads-mid-technology">
+                <h2>Technology at your fingertips.</h2>
+                <a href="catalog.html?category=technology">Explore Technology</a>
+                <img src="images/shop-cart-online.webp" alt="shop-cart-online">
+            </div>
+
+            <div class="ads-mid-women">
+                <h2>Renew your closet 👚</h2>
+                <a href="catalog.html?category=women">Check Women Products</a>
+                <img src="images/renew-your-closet.webp" alt="renew-your-closet">
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="flex flex-row justify-between align-center">
+                <h2>User's Choice</h2>
+                <a href="catalog.html" class="highlighted flex flex-row align-center">Show more <img class="chevron"
+                        src="images/chevron-right.svg" alt="chevron-right"></a>
+            </div>
+            <div id="cards" class="cards-container">
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+                <div class="skeleton">
+                    <div class="skeleton-image sq-loader"></div>
+                    <div class="skeleton-text ln-loader">
+                        <div class="skeleton-title ln-loader"></div>
+                        <div class="skeleton-price ln-loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="wave-container-bottom">
+            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L48,56.7C96,53,192,47,288,45C384,43,480,47,576,40C672,33,768,17,864,10C960,3,1056,7,1152,16.7C1248,27,1344,43,1440,48.3C1536,53,1632,47,1728,36.7C1824,27,1920,13,2016,6.7C2112,0,2208,0,2304,13.3C2400,27,2496,53,2592,55C2688,57,2784,33,2880,26.7C2976,20,3072,30,3168,43.3C3264,57,3360,73,3456,71.7C3552,70,3648,50,3744,35C3840,20,3936,10,4032,16.7C4128,23,4224,47,4320,61.7C4416,77,4512,83,4608,73.3C4704,63,4800,37,4896,23.3C4992,10,5088,10,5184,21.7C5280,33,5376,57,5472,58.3C5568,60,5664,40,5760,28.3C5856,17,5952,13,6048,18.3C6144,23,6240,37,6336,48.3C6432,60,6528,70,6624,61.7C6720,53,6816,27,6864,13.3L6912,0L6912,100L6864,100C6816,100,6720,100,6624,100C6528,100,6432,100,6336,100C6240,100,6144,100,6048,100C5952,100,5856,100,5760,100C5664,100,5568,100,5472,100C5376,100,5280,100,5184,100C5088,100,4992,100,4896,100C4800,100,4704,100,4608,100C4512,100,4416,100,4320,100C4224,100,4128,100,4032,100C3936,100,3840,100,3744,100C3648,100,3552,100,3456,100C3360,100,3264,100,3168,100C3072,100,2976,100,2880,100C2784,100,2688,100,2592,100C2496,100,2400,100,2304,100C2208,100,2112,100,2016,100C1920,100,1824,100,1728,100C1632,100,1536,100,1440,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path></svg>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="catalog.html?category=men's%20clothing">Men's Clothing</a>
+                    <ul>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="catalog.html?category=women's%20clothing">Women's Clothing</a>
+                    <ul>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="catalog.html?category=electronics">Electronics</a>
+                    <ul>
+                        <li><a href="catalog.html?category=electronics&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=electronics&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=electronics&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="catalog.html?category=jewelery">Jewelry</a>
+                    <ul>
+                        <li><a href="catalog.html?category=jewelery&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=jewelery&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=jewelery&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer-bottom">
+            <img class="footer-logo brightness" src="images/ucaima-isotipo.svg" alt="">
+            <p>&copy; <span id="current-year"></span> Ucaima Import. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="scripts/main.mjs" type="module"></script>
 </body>
 
