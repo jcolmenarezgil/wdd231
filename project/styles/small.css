@@ -157,7 +157,16 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--tangerine);
+    color: var(--blacktone);
+    background-color: var(--french-gray);
+}
+
+nav ul li a.active {
+    background-color: #ec7b09ff;
+    color: #080b0d;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: var(--size-00) var(--size-1);
 }
 
 header .header-options {
