@@ -1,9 +1,9 @@
-// main.mjs
+// scripts/main.mjs
 import { updateCurrentYear } from './datetimeyear.js';
 import { setActiveNavLink } from './active-nav.js';
 import { renderProducts } from './product-renderer.js';
 import { loadCatalogPage } from './pagination.js';
-import { initializeCart } from './cart.js';
+import { initializeCartHandlers, renderCartItems } from './cart.js';
 
 function main() {
     console.log("Hello Ucaima Import!");
@@ -11,7 +11,7 @@ function main() {
     setActiveNavLink();
     console.log("Main function executed.");
     
-    initializeCart(); 
+    initializeCartHandlers(); 
     console.log("Cart initialized.");
 
     const currentPathname = window.location.pathname;
@@ -26,10 +26,12 @@ function main() {
     }
 
     if (cleanedCurrentPath === 'catalog.html') {
-        loadCatalogPage();
+        loadCatalogPage(); 
+    } else if (cleanedCurrentPath === 'cart.html') { 
+        renderCartItems(); 
     } else if (cleanedCurrentPath === 'index.html' || cleanedCurrentPath === '') {
-        renderProducts('featured-products-cards', 'rating_desc', 4);
-        renderProducts('users-choice-cards', 'popular_desc', 4);
+        renderProducts('featured-products-cards', 'top-rated', 4);
+        renderProducts('users-choice-cards', 'most-reviewed', 4);
     }
 }
 

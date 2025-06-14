@@ -1,4 +1,4 @@
-// js/product-renderer.js
+// scripts/product-renderer.js
 
 const API_URL = 'https://fakestoreapi.com/products';
 

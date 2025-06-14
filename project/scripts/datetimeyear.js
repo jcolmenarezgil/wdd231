@@ -1,4 +1,4 @@
-// datetimeyear.js
+// scripts/datetimeyear.js
 
 /**
  * Updates the text content of the element with the ID 'current-year'

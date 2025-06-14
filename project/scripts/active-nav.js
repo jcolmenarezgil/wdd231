@@ -1,4 +1,4 @@
-// js/active-nav.js
+// scripts/active-nav.js
 
 /**
  * Marks the current page's link in the navigation as 'active'.

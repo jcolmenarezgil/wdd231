@@ -14,16 +14,17 @@
     --blacktone: #080b0d;
     --whitetone: #F7F7F7;
     --graytone: #B0B0B0;
-    --dark-graytone: #7A7A7A;
+    --dark-graytone: #383838;
     /* color-schema */
     /* https://coolors.co/1b1f50-bccad7-ec7b09-ededed-82b735-2dacdb */
     --space-cadet: rgb(20 36 58);
 
     --french-gray: #bccad7ff;
     --tangerine: #ec7b09ff;
+    --alice-blue: #3F51B5;
     --antiflash-white: #edededff;
     --apple-green: #82b735ff;
-    --process-cyan: #2dacdbff;
+    --process-cyan: #006185;
     /* shadows */
     --model-1: 6px 5px 9px -9px black, 5px 6px 9px -9px black;
 }
@@ -104,14 +105,16 @@ h6 {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: var(--content);
+    height: 100vh;
 }
 
 /* main */
 main {
     margin: 0 auto;
     max-width: 800px;
+    z-index: 2;
 }
 
 /* HEADER */
@@ -120,7 +123,8 @@ header {
     background: linear-gradient(124deg, rgba(23, 38, 61, 1) 41%, rgba(74, 90, 112, 1) 73%, rgba(30, 45, 66, 1) 100%);
     position: relative;
     padding-bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    z-index: 1;
 }
 
 header .header-container,
@@ -244,8 +248,6 @@ header .header-banner img {
     transform: translateY(1px);
     max-height: 48px;
 }
-
-
 
 .wave-container svg {
     display: block;

@@ -29,9 +29,138 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html">UCAIMA <span>IMPORT</span></a>
+            <div class="header-options">
+                <form class="home-search" action="catalog.html" method="get" role="search">
+                    <input type="search" name="search" id="search" placeholder="Search products...">
+                    <button type="submit" aria-label="Search"><img src="images/search.svg" alt="search button"></button>
+                </form>
+                <div class="header-buttons">
+                    <a class="second-option" href="dashboard.html"><img class="white" src="images/account.svg"
+                            alt="account"> Account</a>
+                    <a class="call-to-action" href="cart.html">
+                        <img src="images/cart-white.svg" alt="cart-white">
+                        Shop Now
+                        <span id="cart-item-count" class="cart-item-count hidden">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html?category=men's%20clothing">Men's Clothing</a></li>
+                <li><a href="catalog.html?category=women's%20clothing">Women's Clothing</a></li>
+                <li><a href="catalog.html?category=electronics">Electronics</a></li>
+                <li><a href="catalog.html?category=jewelery">Jewelry</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <h1 class="m2">My Cart</h1>
+        <aside class="cart-admin-aside">
+            <h2>Summary</h2>
+            <div id="cart-summary" class="cart-summary"></div>
+            <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+        </aside>
+        <div id="cart" class="cart-container">
+            <div class="skeleton-cart-item">
+                <div class="skeleton-cart-image sq-loader"></div>
+                <div class="skeleton-cart-title ln-loader"></div>
+                <div class="skeleton-cart-price ln-loader"></div>
+                <div class="skeleton-cart-quantity ln-loader"></div>
+            </div>
+
+            <div class="skeleton-cart-item">
+                <div class="skeleton-cart-image sq-loader"></div>
+                <div class="skeleton-cart-title ln-loader"></div>
+                <div class="skeleton-cart-price ln-loader"></div>
+                <div class="skeleton-cart-quantity ln-loader"></div>
+            </div>
+
+            <div class="skeleton-cart-item">
+                <div class="skeleton-cart-image sq-loader"></div>
+                <div class="skeleton-cart-title ln-loader"></div>
+                <div class="skeleton-cart-price ln-loader"></div>
+                <div class="skeleton-cart-quantity ln-loader"></div>
+            </div>
+
+            <div class="skeleton-cart-item">
+                <div class="skeleton-cart-image sq-loader"></div>
+                <div class="skeleton-cart-title ln-loader"></div>
+                <div class="skeleton-cart-price ln-loader"></div>
+                <div class="skeleton-cart-quantity ln-loader"></div>
+            </div>
+    </main>
+    <footer>
+        <div class="wave-container-bottom">
+            <svg style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,60L48,56.7C96,53,192,47,288,45C384,43,480,47,576,40C672,33,768,17,864,10C960,3,1056,7,1152,16.7C1248,27,1344,43,1440,48.3C1536,53,1632,47,1728,36.7C1824,27,1920,13,2016,6.7C2112,0,2208,0,2304,13.3C2400,27,2496,53,2592,55C2688,57,2784,33,2880,26.7C2976,20,3072,30,3168,43.3C3264,57,3360,73,3456,71.7C3552,70,3648,50,3744,35C3840,20,3936,10,4032,16.7C4128,23,4224,47,4320,61.7C4416,77,4512,83,4608,73.3C4704,63,4800,37,4896,23.3C4992,10,5088,10,5184,21.7C5280,33,5376,57,5472,58.3C5568,60,5664,40,5760,28.3C5856,17,5952,13,6048,18.3C6144,23,6240,37,6336,48.3C6432,60,6528,70,6624,61.7C6720,53,6816,27,6864,13.3L6912,0L6912,100L6864,100C6816,100,6720,100,6624,100C6528,100,6432,100,6336,100C6240,100,6144,100,6048,100C5952,100,5856,100,5760,100C5664,100,5568,100,5472,100C5376,100,5280,100,5184,100C5088,100,4992,100,4896,100C4800,100,4704,100,4608,100C4512,100,4416,100,4320,100C4224,100,4128,100,4032,100C3936,100,3840,100,3744,100C3648,100,3552,100,3456,100C3360,100,3264,100,3168,100C3072,100,2976,100,2880,100C2784,100,2688,100,2592,100C2496,100,2400,100,2304,100C2208,100,2112,100,2016,100C1920,100,1824,100,1728,100C1632,100,1536,100,1440,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="catalog.html?category=men's%20clothing">Men's Clothing</a>
+                    <ul>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=men's%20clothing&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="catalog.html?category=women's%20clothing">Women's Clothing</a>
+                    <ul>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=women's%20clothing&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="catalog.html?category=electronics">Electronics</a>
+                    <ul>
+                        <li><a href="catalog.html?category=electronics&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=electronics&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=electronics&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="catalog.html?category=jewelery">Jewelry</a>
+                    <ul>
+                        <li><a href="catalog.html?category=jewelery&sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?category=jewelery&sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?category=jewelery&sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer-bottom">
+            <img class="footer-logo brightness" src="images/ucaima-isotipo.svg" alt="Ucaima-Import-Isotipo">
+            <p>Created by <strong>Jose D. Colmenarez Gil</strong> for WDD 231.</p>
+            <p>&copy; <span id="current-year"></span> Ucaima Import. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="scripts/main.mjs" type="module"></script>
 </body>
 

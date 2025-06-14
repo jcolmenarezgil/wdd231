@@ -1,4 +1,4 @@
-// js/pagination.js
+// scripts/pagination.js
 import { renderProducts } from './product-renderer.js';
 
 export async function loadCatalogPage() {
