@@ -13,6 +13,8 @@
     /* colors */
     --blacktone: #080b0d;
     --whitetone: #F7F7F7;
+    --graytone: #B0B0B0;
+    --dark-graytone: #7A7A7A;
     /* color-schema */
     /* https://coolors.co/1b1f50-bccad7-ec7b09-ededed-82b735-2dacdb */
     --space-cadet: rgb(20 36 58);
@@ -157,6 +159,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    color: var(--tangerine);
+}
+
+header nav ul li a.active:hover {
     color: var(--blacktone);
     background-color: var(--french-gray);
 }
@@ -243,11 +249,8 @@ header .header-banner img {
 
 .wave-container svg {
     display: block;
-    /* Elimina el espacio extra debajo del SVG */
     width: 100%;
-    /* Asegura que el SVG ocupe el 100% del ancho del contenedor */
     height: auto;
-    /* Mantiene la proporción */
 }
 
 /* LOGO */
@@ -305,7 +308,8 @@ header .header-banner img {
 
 /* CALL-TO-ACTION */
 
-.call-to-action {
+.call-to-action,
+.add-to-cart-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,9 +319,11 @@ header .header-banner img {
     color: var(--blacktone);
     text-decoration: none;
     font-weight: 600;
+    border: 0;
 }
 
-.call-to-action:hover {
+.call-to-action:hover,
+.add-to-cart-btn:hover {
     background-color: var(--apple-green);
     color: var(--space-cadet);
     cursor: pointer;
@@ -362,23 +368,57 @@ section.products {
     max-width: 980px;
 }
 
-/* skeleton */
 
-.skeleton {
+/* product-card */
+
+.product-card {
+    padding: var(--size-2);
+}
+
+.product-title {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    width: 148px;
+}
+
+.product-category {
+    color: var(--process-cyan);
+}
+
+.product-price {
+    color: var(--blacktone);
+    font-weight: bold;
+}
+
+.product-rating .rating-value::before {
+    content: "★";
+    color: var(--tangerine);
+}
+
+.product-rating .rating-count {
+    color: var(--dark-graytone);
+    font-size: var(--size-1);
+}
+
+
+/* skeleton */
+.skeleton,
+.product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
     width: 180px;
-    height: 240px;
-    background-color: var(--antiflash-white);
+    height: auto;
+    min-height: 240px;
+    background-color: #ffffff;
     border-radius: var(--size-0);
-    -webkit-box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
-    box-shadow: 8px 8px 24px -17px rgba(66, 68, 90, 1);
+    border: 1px solid var(--graytone);
 }
 
-.skeleton-image {
+.skeleton-image,
+.product-image-wrapper img {
     width: 100%;
     height: 140px;
     border-radius: var(--size-0);

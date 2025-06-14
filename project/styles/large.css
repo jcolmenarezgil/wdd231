@@ -8,7 +8,8 @@
         align-items: center;
     }
 
-    footer .footer-container, .footer-bottom {
+    footer .footer-container,
+    .footer-bottom {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
@@ -62,7 +63,7 @@ footer {
 .footer-logo {
     width: 68px;
     height: 68px;
-    
+
 }
 
 .footer-bottom {
@@ -102,4 +103,57 @@ footer a:hover {
 
 footer ul li {
     padding: var(--size-0);
+}
+
+/* no-products */
+
+.no-products {
+    font-size: var(--size-3);
+    color: var(--graytone);
+    grid-column: span 4;
+    grid-row: span 4;
+    align-self: center;
+    justify-self: center;
+}
+
+/* pagination */
+
+.pagination-controls {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-button {
+    background-color: #2A7B9B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #1e2d42;
+}
+
+.pagination-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination-button.active-page {
+    background-color: #ec7b09ff;
+    color: #080b0d;
+    font-weight: bold;
+}
+
+.pagination-info {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
 }
