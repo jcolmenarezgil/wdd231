@@ -2,14 +2,17 @@
 import { updateCurrentYear } from './datetimeyear.js';
 import { setActiveNavLink } from './active-nav.js';
 import { renderProducts } from './product-renderer.js';
-import { loadCatalogPage, updateUrlAndReloadCatalog } from './pagination.js';
+import { loadCatalogPage } from './pagination.js';
+import { initializeCart } from './cart.js';
 
 function main() {
     console.log("Hello Ucaima Import!");
-
     updateCurrentYear();
     setActiveNavLink();
     console.log("Main function executed.");
+    
+    initializeCart(); 
+    console.log("Cart initialized.");
 
     const currentPathname = window.location.pathname;
 

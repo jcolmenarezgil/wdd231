@@ -15,6 +15,32 @@
         margin: 0 auto;
         max-width: 980px;
     }
+    
+    main.catalog {
+        display: grid;
+        grid-template-areas: 
+        "sidebar products"
+        "sidebar products"
+        ". ads"
+        ;
+        margin: 0 auto;
+        max-width: 1200px;
+        gap: var(--size-2);
+    }
+    
+    aside {
+        grid-area: sidebar;
+    }
+
+    .ads-container {
+        grid-area: ads;
+        max-width: 800px;
+    }
+
+    .products-container {
+        grid-area: products;
+    }
+
 }
 
 input[type="search"] {
@@ -50,6 +76,78 @@ input[type="search"] {
     }
 }
 
+/* aside */
+
+aside {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2);
+    padding: var(--size-2);
+    background-color: var(--whitetone);
+    border-radius: var(--size-3);
+}
+
+aside ul {
+    padding: 0;
+}
+
+aside ul li {
+    list-style: none;
+    padding: var(--size-2);
+    border-bottom: 1px solid var(--graytone);
+}
+
+aside ul li:last-child {
+    border-bottom: none;
+}
+
+aside ul li a {
+    color: var(--blacktone);
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: var(--tangerine);
+    text-decoration: underline;
+}
+
+.active-filter {
+    color: var(--tangerine);
+    font-weight: bold;
+}
+
+/* cart */
+
+.cart-item-count {
+    background-color: rgb(236, 54, 9); /* Un color que contraste, similar a tu color de énfasis */
+    color: white;
+    border-radius: 50%; /* Para que sea un círculo */
+    padding: 3px 7px; /* Ajusta el padding para que sea un círculo agradable */
+    font-size: 0.8em; /* Tamaño de fuente más pequeño */
+    font-weight: bold;
+    position: absolute; /* Posicionamiento absoluto relativo al enlace padre */
+    top: -5px; /* Ajusta la posición vertical */
+    right: -10px; /* Ajusta la posición horizontal */
+    min-width: 20px; /* Ancho mínimo para un solo dígito */
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.cart-item-count.hidden {
+    display: none; /* Oculta el contador cuando no hay ítems */
+}
+
+/* Asegúrate de que el contenedor padre del span (el <a>) tenga position: relative; */
+/* Esto debería estar en el estilo de tu .call-to-action si no lo está ya */
+.call-to-action {
+    position: relative; /* Muy importante para el posicionamiento del contador */
+    /* Otros estilos de tu .call-to-action */
+    display: inline-block; /* Para que el top/right funcione bien */
+    padding: 10px 15px; /* Ajusta el padding para que el contador no se monte sobre el texto */
+    margin-right: 20px; /* Para dar espacio al contador si está a la derecha */
+}
+
 /* footer */
 
 footer {
@@ -76,7 +174,7 @@ footer {
     margin: var(--size-2);
 }
 
-.footer-bottom p {
+.footer-bottom p:last-child {
     margin: var(--size-2);
     font-size: var(--size-2);
 }
