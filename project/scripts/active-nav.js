@@ -13,7 +13,7 @@ export function setActiveNavLink() {
     console.log('Current Full Pathname:', currentFullPathname);
     console.log('Current Search Params:', currentSearchParams);
 
-    const projectBase = '/project/'; 
+    const projectBase = '/'; 
     let cleanedCurrentPath = currentFullPathname;
 
     if (cleanedCurrentPath.startsWith(projectBase)) {
