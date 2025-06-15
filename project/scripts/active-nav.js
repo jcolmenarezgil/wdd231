@@ -1,65 +1,76 @@
-// scripts/active-nav.js
+// js/active-nav.js
 
-/**
- * Marks the current page's link in the navigation as 'active'.
- * It compares the current window's pathname with the href of each navigation link.
- */
 export function setActiveNavLink() {
-    const navLinks = document.querySelectorAll('nav ul li a');
-    
-    let currentFullPathname = window.location.pathname; 
-    const currentSearchParams = window.location.search;
+    const navLinks = document.querySelectorAll('header nav a');
+    const currentFullUrl = window.location.href;
+    const currentPathname = window.location.pathname;
+    const urlParams = new URLSearchParams(window.location.search);
 
-    console.log('Current Full Pathname:', currentFullPathname);
-    console.log('Current Search Params:', currentSearchParams);
+    console.log("Current Full Pathname:", currentPathname);
+    console.log("Current Search Params:", urlParams.toString());
 
-    const projectBase = '/'; 
-    let cleanedCurrentPath = currentFullPathname;
+    const pathSegments = currentPathname.split('/');
+    const currentFilename = pathSegments[pathSegments.length - 1]; 
 
-    if (cleanedCurrentPath.startsWith(projectBase)) {
-        cleanedCurrentPath = cleanedCurrentPath.substring(projectBase.length);
+    let cleanedCurrentFilename = currentFilename;
+    if (cleanedCurrentFilename === '') {
+        cleanedCurrentFilename = 'index.html';
     }
 
-    if (cleanedCurrentPath === '' || cleanedCurrentPath === '/') {
-        cleanedCurrentPath = 'index.html';
-    }
+    console.log("Cleaned Current Filename for Comparison:", cleanedCurrentFilename);
 
-    console.log('Cleaned Current Path for Comparison:', cleanedCurrentPath);
+    const currentCategory = urlParams.get('category');
+    const currentSort = urlParams.get('sort');
 
     navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
+        const linkUrl = new URL(link.href);
+        const linkFilename = linkUrl.pathname.split('/').pop();
+        const linkCategory = linkUrl.searchParams.get('category');
+        const linkSort = linkUrl.searchParams.get('sort');
+
+        console.log(`--- Checking link: ${link.href} (Filename: ${linkFilename}) ---`);
+
+        let isActive = false;
+
         
-        const linkFilename = linkHref.split('?')[0].split('/').pop();
+        if (linkFilename === cleanedCurrentFilename) {
 
-        console.log(`--- Checking link: ${linkHref} (Filename: ${linkFilename}) ---`);
-
-        if (cleanedCurrentPath === linkFilename) {
-
-            if (linkFilename === 'catalog.html') {
-                const linkUrl = new URL(link.href, window.location.origin);
-                const currentUrl = new URL(window.location.href);
-
-                const linkCategory = linkUrl.searchParams.get('category');
-                const currentCategory = currentUrl.searchParams.get('category');
-
-                console.log(`Catalog: Link Category: ${linkCategory}, Current Category: ${currentCategory}`);
-
-                if (linkCategory && currentCategory && linkCategory === currentCategory) {
-                    link.classList.add('active');
-                    console.log(`Active: ${linkHref} - Matched category`);
-                } else if (!linkCategory && !currentCategory) {
-                    
-                    link.classList.add('active');
-                    console.log(`Active: ${linkHref} - Matched plain catalog`);
-                }
-                
-            } else {
-                
-                link.classList.add('active');
-                console.log(`Active: ${linkHref} - Matched filename`);
+            if (!linkCategory && !linkSort) { 
+                isActive = true;
+                console.log(`Active (Simple Match): ${linkFilename}`);
             }
+        }
+
+        
+        if (cleanedCurrentFilename === 'catalog.html' && linkFilename === 'catalog.html') {
+            if (currentCategory === linkCategory && currentSort === linkSort) {
+                isActive = true;
+                console.log(`Active (Catalog Match): Category: ${linkCategory}, Sort: ${linkSort}`);
+            } else if (!currentCategory && !currentSort && !linkCategory && !linkSort) {
+                
+                isActive = true;
+                console.log(`Active (Catalog Base Match): No filters.`);
+            } else if (!currentCategory && linkFilename === 'catalog.html' && !linkCategory) {
+                
+                isActive = true;
+                console.log(`Active (All Products Link Match): ${linkFilename}`);
+            }
+        }
+                
+        if (linkCategory && currentCategory === linkCategory && cleanedCurrentFilename === 'catalog.html') {
+
+            if (!linkSort) { 
+                 isActive = true;
+                 console.log(`Active (Category Nav Link Match): ${linkCategory}`);
+            }
+        }
+
+
+        if (isActive) {
+            link.classList.add('active');
         } else {
-            console.log(`Not Active: ${linkHref} - Filename mismatch.`);
+            link.classList.remove('active');
+            console.log(`Not Active: ${link.href} - Filename mismatch.`); 
         }
     });
 }
