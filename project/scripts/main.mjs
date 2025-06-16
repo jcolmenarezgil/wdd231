@@ -4,19 +4,25 @@ import { setActiveNavLink } from './active-nav.js';
 import { renderProducts } from './product-renderer.js';
 import { loadCatalogPage } from './pagination.js';
 import { initializeCartHandlers, renderCartItems } from './cart.js';
+import { initializeOrderConfirmationPage } from './order-confirmation.js';
 
 function main() {
     console.log("Hello Ucaima Import!");
     updateCurrentYear();
     setActiveNavLink();
     console.log("Main function executed.");
-    
-    initializeCartHandlers(); 
+
+    initializeCartHandlers();
     console.log("Cart initialized.");
+
+    if (window.location.pathname.endsWith('/order-confirmation.html')) {
+        initializeOrderConfirmationPage();
+    }
 
     const currentPathname = window.location.pathname;
 
     const projectBase = '/wdd231/project/';
+    
     let cleanedCurrentPath = currentPathname;
     if (cleanedCurrentPath.startsWith(projectBase)) {
         cleanedCurrentPath = cleanedCurrentPath.substring(projectBase.length);
@@ -26,12 +32,12 @@ function main() {
     }
 
     if (cleanedCurrentPath === 'catalog.html') {
-        loadCatalogPage(); 
-    } else if (cleanedCurrentPath === 'cart.html') { 
-        renderCartItems(); 
+        loadCatalogPage();
+    } else if (cleanedCurrentPath === 'cart.html') {
+        renderCartItems();
     } else if (cleanedCurrentPath === 'index.html' || cleanedCurrentPath === '') {
-        renderProducts('featured-products-cards', 'top-rated', 4);
-        renderProducts('users-choice-cards', 'most-reviewed', 4);
+        renderProducts('featured-products-cards', 'rating_desc', 4);
+        renderProducts('users-choice-cards', 'popular_desc', 4);
     }
 }
 

@@ -1,4 +1,4 @@
-// js/active-nav.js
+// scripts/active-nav.js
 
 export function setActiveNavLink() {
     const navLinks = document.querySelectorAll('header nav a');

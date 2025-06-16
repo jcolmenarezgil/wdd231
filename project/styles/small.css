@@ -18,7 +18,6 @@
     /* color-schema */
     /* https://coolors.co/1b1f50-bccad7-ec7b09-ededed-82b735-2dacdb */
     --space-cadet: rgb(20 36 58);
-
     --french-gray: #bccad7ff;
     --tangerine: #ec7b09ff;
     --alice-blue: #3F51B5;
@@ -27,6 +26,7 @@
     --process-cyan: #006185;
     /* shadows */
     --model-1: 6px 5px 9px -9px black, 5px 6px 9px -9px black;
+    --model-2: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* globals */
@@ -403,6 +403,22 @@ section.products {
     font-size: var(--size-1);
 }
 
+.product-image-wrapper {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--size-0);
+}
+
+.product-image-wrapper img {
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    border-radius: var(--size-0);
+    padding: var(--size-1);
+}
 
 /* skeleton */
 .skeleton,
@@ -419,10 +435,9 @@ section.products {
     border: 1px solid var(--graytone);
 }
 
-.skeleton-image,
-.product-image-wrapper img {
+.skeleton-image {
     width: 100%;
-    height: 140px;
+    height: 144px;
     border-radius: var(--size-0);
     padding: var(--size-1);
 }
