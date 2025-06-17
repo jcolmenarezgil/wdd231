@@ -704,3 +704,8 @@ summary {
 summary:hover {
     cursor: pointer;
 }
+
+/* video_link */
+.video_link {
+    color: var(--whitetone);
+}
