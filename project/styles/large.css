@@ -35,7 +35,7 @@
 
     header nav ul li a {
         padding: 0;
-        transition: 2s background-color ease-out;
+        transition: .2s background-color ease-out;
     }
 
     header nav ul li a:hover {
