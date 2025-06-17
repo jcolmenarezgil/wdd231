@@ -767,7 +767,6 @@ footer .footer-bottom {
 
 .app-modal:not([open]) {
     opacity: 0;
-    pointer-events: none;
     transform: scale(0.95) translateY(20px);
     transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
