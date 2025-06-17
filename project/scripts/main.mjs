@@ -29,7 +29,7 @@ function main() {
 
     const currentPathname = window.location.pathname;
 
-    const projectBase = '/project/';
+    const projectBase = '/wdd231/project/';
 
     let cleanedCurrentPath = currentPathname;
     if (cleanedCurrentPath.startsWith(projectBase)) {
