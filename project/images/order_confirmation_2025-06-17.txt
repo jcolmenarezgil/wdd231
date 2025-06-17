@@ -1,0 +1,26 @@
+
+            Order Confirmation
+
+            ------------------------------------
+            Order Summary
+            ------------------------------------
+            No products listed.
+
+            ------------------------------------
+            Customer & Shipping Details
+            ------------------------------------
+            Customer & Shipping Details
+Full Name: Jose David Colmenarez Gil
+Email Address: jose.colmenares.gil@gmail.com
+Address Line 1: Urb La Esmeralda, Manzana C7, Casa Numero 48
+City: Valencia
+State/Province: Carabobo
+Zip/Postal Code: 2006
+Country: US
+Credit Card (Last 4): ************6884
+Expiry Date: **/****
+CVV: ***
+Total Amount: 66.84
+
+            Thank you for your purchase!
+            
