@@ -8,12 +8,107 @@
         align-items: center;
     }
 
+    header .main-menu {
+        display: none;
+    }
+
+    header nav {
+        margin: 0 auto;
+        max-width: 980px;
+
+        padding: var(--size-1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        position: static;
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        background-color: transparent;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        padding: 0;
+        transition: 2s background-color ease-out;
+    }
+
+    header nav ul li a:hover {
+        color: var(--tangerine);
+    }
+
+    header nav ul li a.active:hover {
+        background-color: var(--french-gray);
+        color: var(--blacktone);
+        font-weight: 600;
+    }
+
+    .call-to-action .text {
+        display: block;
+    }
+
+    header .header-container,
+    header .header-banner {
+        margin: 0 auto;
+        max-width: 980px;
+    }
+
+    header .header-banner .header-banner-text {
+        align-items: flex-start;
+    }
+
+    .header-options .header-buttons {
+        justify-content: space-around;
+    }
+
+    header .header-banner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-options form.home-search {
+        justify-self: center;
+        position: relative;
+    }
+
+    .header-options form.home-search button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        position: absolute !important;
+        left: 0;
+        bottom: 0px;
+        margin-bottom: 9px;
+    }
+
+    .header-options .header-buttons .second-option span {
+        display: block;
+    }
+
+    .second-option img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .call-to-action span {
+        display: block;
+    }
+
     footer .footer-container,
     .footer-bottom {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         max-width: 980px;
+    }
+
+    main {
+        margin: 0 auto;
+        max-width: 800px;
     }
 
     main.catalog {
@@ -40,19 +135,28 @@
         gap: var(--size-2);
     }
 
+    .advantages {
+        margin: 0 auto;
+        max-width: 980px;
+    }
+
     aside {
         grid-area: sidebar;
     }
 
     .ads-container {
         grid-area: ads;
-        max-width: 800px;
+        margin: 0 auto;
+        max-width: 980px;
     }
 
     .products-container {
         grid-area: products;
     }
 
+    summary img {
+        display: none !important;
+    }
 }
 
 input[type="search"] {
@@ -156,7 +260,6 @@ aside ul li a:hover {
 
 .call-to-action {
     position: relative;
-    display: inline-block;
     padding: 10px 15px;
     margin-right: 20px;
 }
@@ -595,7 +698,6 @@ footer .footer-bottom {
     transform-origin: left;
 }
 
-/* Progress bar animation - the ‘animation’ property will be set in JS */
 @keyframes cart-notification-progress {
     from {
         transform: scaleX(1);

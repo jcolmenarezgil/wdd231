@@ -19,6 +19,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- styles -->
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,12 +40,15 @@
                 </form>
                 <div class="header-buttons">
                     <a class="second-option" href="dashboard.html"><img class="white" src="images/account.svg"
-                            alt="account"> Account</a>
+                            alt="account"> <span>Account</span></a>
                     <a class="call-to-action" href="cart.html">
                         <img src="images/cart-white.svg" alt="cart-white">
-                        Shop Now
+                        <span class="text">Shop Now</span>
                         <span id="cart-item-count" class="cart-item-count hidden">0</span>
                     </a>
+                    <div id="hambuger-menu" class="main-menu">
+                        <img src="images/menu.svg" alt="hamburger menu">
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,27 +64,30 @@
     </header>
     <main class="catalog">
         <aside class="catalog-filters">
-            <h2>Filter & Sort</h2>
+            <details open>
 
-            <div class="filter-group">
-                <h3>Categories</h3>
-                <ul id="category-filters">
-                    <li><a href="catalog.html">All Products</a></li>
-                    <li><a href="catalog.html?category=men's%20clothing">Men's Clothing</a></li>
-                    <li><a href="catalog.html?category=women's%20clothing">Women's Clothing</a></li>
-                    <li><a href="catalog.html?category=electronics">Electronics</a></li>
-                    <li><a href="catalog.html?category=jewelery">Jewelry</a></li>
-                </ul>
-            </div>
+                <summary ><h2>Filter & Sort</h2><img src="images/open-filter.svg" alt="open-filter"></summary>
 
-            <div class="filter-group">
-                <h3>Sort By</h3>
-                <ul id="sort-filters">
-                    <li><a href="catalog.html?sort=rating_desc">Top Rated</a></li>
-                    <li><a href="catalog.html?sort=price_asc">Lowest Price</a></li>
-                    <li><a href="catalog.html?sort=popular_desc">Most Reviewed</a></li>
-                </ul>
-            </div>
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <ul id="category-filters">
+                        <li><a href="catalog.html">All Products</a></li>
+                        <li><a href="catalog.html?category=men's%20clothing">Men's Clothing</a></li>
+                        <li><a href="catalog.html?category=women's%20clothing">Women's Clothing</a></li>
+                        <li><a href="catalog.html?category=electronics">Electronics</a></li>
+                        <li><a href="catalog.html?category=jewelery">Jewelry</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Sort By</h3>
+                    <ul id="sort-filters">
+                        <li><a href="catalog.html?sort=rating_desc">Top Rated</a></li>
+                        <li><a href="catalog.html?sort=price_asc">Lowest Price</a></li>
+                        <li><a href="catalog.html?sort=popular_desc">Most Reviewed</a></li>
+                    </ul>
+                </div>
+            </details>
         </aside>
 
         <section class="products">

@@ -5,6 +5,8 @@ import { renderProducts } from './product-renderer.js';
 import { loadCatalogPage } from './pagination.js';
 import { initializeCartHandlers, renderCartItems } from './cart.js';
 import { initializeOrderConfirmationPage } from './order-confirmation.js';
+import { initializeHamburgerMenu } from './navigation.js';
+import { initializeDetailsToggle } from './details-toggler.js';
 
 function main() {
     console.log("Hello Ucaima Import!");
@@ -15,14 +17,20 @@ function main() {
     initializeCartHandlers();
     console.log("Cart initialized.");
 
+    initializeHamburgerMenu();
+    console.log("Hamburger menu initialized.");
+
     if (window.location.pathname.endsWith('/order-confirmation.html')) {
         initializeOrderConfirmationPage();
     }
 
+    initializeDetailsToggle();
+    console.log("Details toggle initialized.");
+
     const currentPathname = window.location.pathname;
 
-    const projectBase = '/wdd231/project/';
-    
+    const projectBase = '/project/';
+
     let cleanedCurrentPath = currentPathname;
     if (cleanedCurrentPath.startsWith(projectBase)) {
         cleanedCurrentPath = cleanedCurrentPath.substring(projectBase.length);
