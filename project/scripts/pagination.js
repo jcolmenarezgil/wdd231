@@ -33,7 +33,7 @@ export async function loadCatalogPage() {
             for (let i = 1; i <= totalPages; i++) {
                 const pageButton = document.createElement('button');
                 pageButton.textContent = i;
-                pageButton.classList.add('pagination-button', 'm2');
+                pageButton.classList.add('pagination-button');
                 if (i === currentPage) {
                     pageButton.classList.add('active-page');
                 }
