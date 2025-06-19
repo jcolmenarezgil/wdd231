@@ -86,7 +86,7 @@ export function showToast(options) {
     // Handle action button
     if (action && action.text && typeof action.callback === 'function') {
         toastActionButton.textContent = action.text;
-        toastActionButton.style.display = 'inline-block';
+        toastActionButton.style.display = 'block';
         currentActionCallback = action.callback; 
     } else {
         toastActionButton.style.display = 'none';
