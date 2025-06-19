@@ -720,6 +720,7 @@ footer .footer-bottom {
     margin-left: 10px;
     flex-shrink: 0;
     transition: background-color 0.2s ease;
+    width: 56.44px;
 }
 
 .toast-action-btn:hover {
